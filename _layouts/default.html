@@ -16,6 +16,8 @@
 
 <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
 
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+
     <!-- for mathjax support -->
     {% if page.usemathjax %}
       <script type="text/x-mathjax-config">
@@ -25,9 +27,6 @@
       </script>
       <script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     {% endif %}
-
-<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-
 </head>
 
 {% if jekyll.environment == 'production' %}
