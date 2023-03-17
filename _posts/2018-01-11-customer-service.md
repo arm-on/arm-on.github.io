@@ -31,5 +31,5 @@ rating: 4.5
 ---
 ```
 
-\\[\mathbb{P}(A=B)=\dfrac{1}{2}\\]
+$$\mathbb{P}(A=B)=\dfrac{1}{2}$$
 
