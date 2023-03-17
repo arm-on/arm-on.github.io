@@ -30,5 +30,6 @@ description: "My review of Inception movie. Actors, directing and more."
 rating: 4.5
 ---
 ```
-
-$$x^2+y^2=z^2$$
+<div>
+$x^2+y^2=z^2$
+</div>
