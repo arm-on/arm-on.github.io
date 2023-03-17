@@ -9,6 +9,7 @@ description: "My review of Inception movie. Acting, plot and something else in t
 featured: true
 hidden: true
 rating: 4.5
+usemathjax: true
 ---
 
 Review products, books, movies, restaurant and anything you like on your Jekyll blog with Mediumish! JSON-LD ready for review property.
@@ -29,3 +30,5 @@ description: "My review of Inception movie. Actors, directing and more."
 rating: 4.5
 ---
 ```
+
+$$x^2+y^2=z^2$$
