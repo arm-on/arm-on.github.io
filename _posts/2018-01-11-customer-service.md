@@ -9,7 +9,7 @@ description: "My review of Inception movie. Acting, plot and something else in t
 featured: true
 hidden: true
 rating: 4.5
-usemathjax: true
+mathjax: true
 ---
 
 Review products, books, movies, restaurant and anything you like on your Jekyll blog with Mediumish! JSON-LD ready for review property.
