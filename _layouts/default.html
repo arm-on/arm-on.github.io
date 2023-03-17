@@ -21,11 +21,14 @@
  <!-- for mathjax support -->
  {% if page.mathjax %}
  <script type="text/x-mathjax-config">
-   MathJax.Hub.Config({
-    "HTML-CSS": {
-      preferredFont: "Asana Math"
-    }
-  });
+    MathJax.Hub.Config({
+        "HTML-CSS" : {
+            availableFonts : ["STIX"],
+            preferredFont : "STIX",
+            webFont : "STIX-Web",
+            imageFont : null
+        }
+    });
  </script>
  <script type="text/javascript" async 
 src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?
