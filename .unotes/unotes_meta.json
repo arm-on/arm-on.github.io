@@ -1,0 +1,62 @@
+{
+  "name": "",
+  "isOrdered": true,
+  "folders": {
+    "_includes": {
+      "name": "_includes",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "_layouts": {
+      "name": "_layouts",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "_pages": {
+      "name": "_pages",
+      "isOrdered": true,
+      "folders": {},
+      "files": {
+        "categories": 0,
+        "about": 1,
+        "tags": 2
+      }
+    },
+    "_posts": {
+      "name": "_posts",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "_sass": {
+      "name": "_sass",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "_site": {
+      "name": "_site",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "assets": {
+      "name": "assets",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "site": {
+      "name": "site",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    }
+  },
+  "files": {
+    "changelog": 0,
+    "README": 1
+  }
+}
