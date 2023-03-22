@@ -15,10 +15,10 @@ permalink: /:title/
 authors:
   arman:
     name: Arman
-    display_name: Malekzadeh
+    display_name: Arman
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
     email: malekzadeh@ieee.org
-    web: https://arm-on.github.io
+    web: https://www.geekdaily.ir
     twitter: https://twitter.com/wowthemesnet
     description: "Enthusiastic about Information Technology, Linguistics, and many other things!"
   john:
