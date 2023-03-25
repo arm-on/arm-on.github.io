@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How difficult is it to learn German?"
+title:  "How hard is it to learn German?"
 author: arman
 categories: [ German Language, Learning Languages, Deutsch ]
 tags: [red, yellow]
