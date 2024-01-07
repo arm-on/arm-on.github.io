@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fa"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="fa" /><updated>2024-01-07T13:21:42+03:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">سیمرغ</title><subtitle>یک تم فارسی برای Jekyll.  کد سیمرغ در &lt;a href=&quot;https://github.com/mhdzli/simorq&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;گیت‌هاب&lt;/a&gt;.</subtitle><author><name>اسم شما</name><email>your@email.address</email></author><entry><title type="html">افزایش عمر باتری لپ‌‌تاپ</title><link href="http://localhost:4000/tlp/" rel="alternate" type="text/html" title="افزایش عمر باتری لپ‌‌تاپ" /><published>2020-09-07T23:58:47+04:30</published><updated>2020-09-07T23:58:47+04:30</updated><id>http://localhost:4000/tlp</id><content type="html" xml:base="http://localhost:4000/tlp/"><![CDATA[<h1 id="باتریهای-لیتیوم-یون">باتری‌های لیتیوم-یون</h1>
+
+<p>باتری‌های لیتیوم یونی نباید خیلی خالی یا خیلی پر شوند. به این معنی که نباید اجازه داد شارژ آنها کاملا تخلیه شود تا منجر به خاموش شدن دستگاه شوند و همچنین نباید پس از وقتی که شارژشان پر شد، به منبع شارژ متصل بمانند.</p>
+
+<p>در حالت ایده‌آل نباید اجازه داد که یک باتری لیتیوم یونی بیش از ۸۰ درصد شارژ شود یا کمتر از ۲۰ درصد تخلیه شود،</p>
+
+<p>با توجه به اینکه امروزه همه ما از لپ‌تاپ‌ها بیشتر در حالتی که به شارژر وصل هستند استفاده می‌کنیم و کمتر  پیش می‌آید دسترسی و امکان اتصال لپ‌تاپ به برق را نداشته باشیم، پیشنهاد می‌شود برای افزایش طول عمر باتری میزان شارژ آن را حدود ۶۰ درصد نگهداریم.</p>
+
+<p>بیشتر برندهای لپ‌تاپهای امروزی روی ویندوز ابزارهای رسمی برای کنترل میزان آستانه شارژ لپ‌تاپ دارند.</p>
+
+<h1 id="تنظیم-threshold">تنظیم <code class="language-plaintext highlighter-rouge">threshold</code></h1>
+
+<p>کرنل لینوکس هم از ورژن V4.17 و به صورت دقیق‌تر با <a href="https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/tree/drivers/platform/x86/thinkpad_acpi.c?h=next-20180226#n9216">این پچ</a> یک ماژول رابط کاربری برای کنترل آستانه شارژ باتری‌ها معرفی کرد که در ابتدا برای چند سری از Thinkpadهای شرکت لنوو به صورت آزمایشی فعال شد و در ادامه دستگاه‌های بیشتری را پشتیبانی می‌کند.</p>
+
+<p>برای اینکه بدانید آیا لپ‌تاپ شما هم از این پشتیبانی برخوردار است راه‌های مختلفی وجود دارد. ساده‌ترین کار این است که ببینید در مسیر فایل‌های سیستمی مدیریت توان لپ‌تاپ شما، فایلی برای کنترل رفتار آستانه باتری وجود دارد یا خیر. این فایل معمولا با اسم ‎<code class="language-plaintext highlighter-rouge">charge_control_{start,end}_threshold</code>‬ و در مسیر ‎<code class="language-plaintext highlighter-rouge">/sys/class/power_supply/BAT[0-9]</code>‬ قرار دارد.</p>
+
+<p>اگر به صورت دستی مقدار این فایل را تغییر دهید، خواهید دید که شارژ شدن باتری در آستانه تعریف شده توسط شما متوقف می‌شود. برای این کار از فرامین <code class="language-plaintext highlighter-rouge">echo</code> و <code class="language-plaintext highlighter-rouge">tee</code> بهره ببرید. آشکار است که برای این کار باید دسترسی روت داشته باشید.</p>
+
+<h1 id="استفاده-از-tlp">استفاده از <code class="language-plaintext highlighter-rouge">TLP</code></h1>
+
+<p>برای کنترل آستانه شارژ باطری می‌توانید از <a href="https://github.com/linrunner/TLP">TLP</a> نیز استفاده کنید. اگر این ابزار هنوز از سیستم شما پشتیبانی نمی‌کند و اطمینان دارید که دستگاه شما چنین قابلیتی دارد، می‌توانید با توجه به دستور‌العملی که در <a href="https://github.com/linrunner/TLP/issues/321#issuecomment-581012796">این کامنت</a> آمده عمل کنید و یک <code class="language-plaintext highlighter-rouge">gist</code> بسازید و لینک آن را زیر همین <a href="https://github.com/linrunner/TLP/issues/321#issue"><code class="language-plaintext highlighter-rouge">#issue321&amp;</code></a> کامنت بگذارید تا توسعه‌دهندگان در ویرایش‌های بعد، پشتیبانی از  دستگاه شما را هم پیگیری کنند. دقت کنید که پیش از شما مشخصات دستگاهتان ثبت نشده باشد و اسپم نکنید.</p>
+
+<p>نمونه خروجی به این شکل خواهد بود :</p>
+
+<div class="code-block">
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">sudo </span>tlp-stat <span class="nt">-s</span> <span class="nt">-b</span>
+<span class="nt">---</span> TLP 1.3.1 <span class="nt">--------------------------------------------</span>
+
++++ System Info
+System         <span class="o">=</span> ASUSTeK COMPUTER INC. 1.0        ZenBook 14 UX410UFR
+BIOS           <span class="o">=</span> UX410UFR.201
+Kernel         <span class="o">=</span> 5.5.3-arch1-1 <span class="c">#1 SMP PREEMPT Tue, 11 Feb 2020 15:35:41 +0000 x86_64</span>
+/proc/cmdline  <span class="o">=</span> <span class="nv">BOOT_IMAGE</span><span class="o">=</span>/vmlinuz-linux <span class="nv">root</span><span class="o">=</span><span class="nv">UUID</span><span class="o">=</span>805eb372-94c7-4e8c-87b4-54b0414fa84a rw <span class="nv">loglevel</span><span class="o">=</span>3 quiet
+Init system    <span class="o">=</span> systemd 
+Boot mode      <span class="o">=</span> UEFI
+
++++ TLP Status
+State          <span class="o">=</span> enabled
+RDW state      <span class="o">=</span> enabled
+Last run       <span class="o">=</span> 09:11:45 PM,   1613 sec<span class="o">(</span>s<span class="o">)</span> ago
+Mode           <span class="o">=</span> AC
+Power <span class="nb">source</span>   <span class="o">=</span> AC
+
+Notice: systemd-rfkill.service is not masked <span class="nt">--</span> invoke <span class="s2">"systemctl mask systemd-rfkill.service"</span> to correct this!
+Notice: systemd-rfkill.socket is not masked <span class="nt">--</span> invoke <span class="s2">"systemctl mask systemd-rfkill.socket"</span> to correct this!
+
++++ Battery Features: Charge Thresholds and Recalibrate
+natacpi    <span class="o">=</span> inactive <span class="o">(</span>laptop not supported<span class="o">)</span>
+tpacpi-bat <span class="o">=</span> inactive <span class="o">(</span>laptop not supported<span class="o">)</span>
+tp-smapi   <span class="o">=</span> inactive <span class="o">(</span>laptop not supported<span class="o">)</span>
+
++++ Battery Status: BAT0
+/sys/class/power_supply/BAT0/manufacturer                   <span class="o">=</span> ASUSTeK
+/sys/class/power_supply/BAT0/model_name                     <span class="o">=</span> ASUS Battery
+/sys/class/power_supply/BAT0/cycle_count                    <span class="o">=</span>     35
+/sys/class/power_supply/BAT0/energy_full_design             <span class="o">=</span>  48336 <span class="o">[</span>mWh]
+/sys/class/power_supply/BAT0/energy_full                    <span class="o">=</span>  45474 <span class="o">[</span>mWh]
+/sys/class/power_supply/BAT0/energy_now                     <span class="o">=</span>  31327 <span class="o">[</span>mWh]
+/sys/class/power_supply/BAT0/power_now                      <span class="o">=</span>      0 <span class="o">[</span>mW]
+/sys/class/power_supply/BAT0/status                         <span class="o">=</span> Not charging
+
+Charge                                                      <span class="o">=</span>   68.9 <span class="o">[</span>%]
+Capacity                                                    <span class="o">=</span>   94.1 <span class="o">[</span>%]
+
+<span class="c"># **NOTE**</span>
+<span class="c"># (I manually set the charge_control_end_threshold t0 60)</span>
+
+<span class="nv">$ </span><span class="nb">grep</span> <span class="s1">'.*'</span> /sys/class/power_supply/BAT?/<span class="k">*</span>
+/sys/class/power_supply/BAT0/alarm:4833000
+/sys/class/power_supply/BAT0/capacity:68
+/sys/class/power_supply/BAT0/capacity_level:Normal
+/sys/class/power_supply/BAT0/charge_control_end_threshold:60
+/sys/class/power_supply/BAT0/cycle_count:35
+/sys/class/power_supply/BAT0/energy_full:45474000
+/sys/class/power_supply/BAT0/energy_full_design:48336000
+/sys/class/power_supply/BAT0/energy_now:31327000
+/sys/class/power_supply/BAT0/manufacturer:ASUSTeK
+/sys/class/power_supply/BAT0/model_name:ASUS Battery
+/sys/class/power_supply/BAT0/power_now:0
+/sys/class/power_supply/BAT0/present:1
+/sys/class/power_supply/BAT0/serial_number: 
+/sys/class/power_supply/BAT0/status:Not charging
+/sys/class/power_supply/BAT0/technology:Li-ion
+/sys/class/power_supply/BAT0/type:Battery
+/sys/class/power_supply/BAT0/uevent:POWER_SUPPLY_NAME<span class="o">=</span>BAT0
+/sys/class/power_supply/BAT0/uevent:POWER_SUPPLY_STATUS<span class="o">=</span>Not charging
+/sys/class/power_supply/BAT0/uevent:POWER_SUPPLY_PRESENT<span class="o">=</span>1
+/sys/class/power_supply/BAT0/uevent:POWER_SUPPLY_TECHNOLOGY<span class="o">=</span>Li-ion
+/sys/class/power_supply/BAT0/uevent:POWER_SUPPLY_CYCLE_COUNT<span class="o">=</span>35
+/sys/class/power_supply/BAT0/uevent:POWER_SUPPLY_VOLTAGE_MIN_DESIGN<span class="o">=</span>11400000
+/sys/class/power_supply/BAT0/uevent:POWER_SUPPLY_VOLTAGE_NOW<span class="o">=</span>11400000
+/sys/class/power_supply/BAT0/uevent:POWER_SUPPLY_POWER_NOW<span class="o">=</span>0
+/sys/class/power_supply/BAT0/uevent:POWER_SUPPLY_ENERGY_FULL_DESIGN<span class="o">=</span>48336000
+/sys/class/power_supply/BAT0/uevent:POWER_SUPPLY_ENERGY_FULL<span class="o">=</span>45474000
+/sys/class/power_supply/BAT0/uevent:POWER_SUPPLY_ENERGY_NOW<span class="o">=</span>31327000
+/sys/class/power_supply/BAT0/uevent:POWER_SUPPLY_CAPACITY<span class="o">=</span>68
+/sys/class/power_supply/BAT0/uevent:POWER_SUPPLY_CAPACITY_LEVEL<span class="o">=</span>Normal
+/sys/class/power_supply/BAT0/uevent:POWER_SUPPLY_MODEL_NAME<span class="o">=</span>ASUS Battery
+/sys/class/power_supply/BAT0/uevent:POWER_SUPPLY_MANUFACTURER<span class="o">=</span>ASUSTeK
+/sys/class/power_supply/BAT0/uevent:POWER_SUPPLY_SERIAL_NUMBER<span class="o">=</span> 
+/sys/class/power_supply/BAT0/voltage_min_design:11400000
+/sys/class/power_supply/BAT0/voltage_now:11400000</code></pre></figure>
+
+</div>
+
+<p>و برای <code class="language-plaintext highlighter-rouge">udevadm test</code>:</p>
+
+<div class="code-block">
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>udevadm <span class="nb">test</span> /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:19/PNP0C09:01/PNP0C0A:03/power_supply/BAT0
+This program is <span class="k">for </span>debugging only, it does not run any program
+specified by a RUN key. It may show incorrect results, because
+some values may be different, or not available at a simulation run.
+
+Load module index
+Parsed configuration file /usr/lib/systemd/network/99-default.link
+Created <span class="nb">link </span>configuration context.
+Reading rules file: /usr/lib/udev/rules.d/01-md-raid-creating.rules
+Reading rules file: /usr/lib/udev/rules.d/10-dm.rules
+Reading rules file: /usr/lib/udev/rules.d/11-dm-lvm.rules
+Reading rules file: /usr/lib/udev/rules.d/13-dm-disk.rules
+Reading rules file: /usr/lib/udev/rules.d/39-usbmuxd.rules
+Reading rules file: /usr/lib/udev/rules.d/40-usb-media-players.rules
+Reading rules file: /usr/lib/udev/rules.d/50-udev-default.rules
+Reading rules file: /usr/lib/udev/rules.d/60-autosuspend-chromiumos.rules
+Reading rules file: /usr/lib/udev/rules.d/60-block.rules
+Reading rules file: /usr/lib/udev/rules.d/60-cdrom_id.rules
+Reading rules file: /usr/lib/udev/rules.d/60-drm.rules
+Reading rules file: /usr/lib/udev/rules.d/60-evdev.rules
+Reading rules file: /usr/lib/udev/rules.d/60-fido-id.rules
+Reading rules file: /usr/lib/udev/rules.d/60-input-id.rules
+Reading rules file: /usr/lib/udev/rules.d/60-persistent-alsa.rules
+Reading rules file: /usr/lib/udev/rules.d/60-persistent-input.rules
+Reading rules file: /usr/lib/udev/rules.d/60-persistent-storage-tape.rules
+Reading rules file: /usr/lib/udev/rules.d/60-persistent-storage.rules
+Reading rules file: /usr/lib/udev/rules.d/60-persistent-v4l.rules
+Reading rules file: /usr/lib/udev/rules.d/60-rfkill.rules
+Reading rules file: /usr/lib/udev/rules.d/60-sensor.rules
+Reading rules file: /usr/lib/udev/rules.d/60-serial.rules
+Reading rules file: /usr/lib/udev/rules.d/61-autosuspend-manual.rules
+Reading rules file: /usr/lib/udev/rules.d/63-md-raid-arrays.rules
+Reading rules file: /usr/lib/udev/rules.d/64-btrfs-dm.rules
+Reading rules file: /usr/lib/udev/rules.d/64-btrfs.rules
+Reading rules file: /usr/lib/udev/rules.d/64-md-raid-assembly.rules
+Reading rules file: /usr/lib/udev/rules.d/65-libwacom.rules
+Reading rules file: /usr/lib/udev/rules.d/69-cd-sensors.rules
+Reading rules file: /usr/lib/udev/rules.d/69-dm-lvm-metad.rules
+Reading rules file: /usr/lib/udev/rules.d/69-libmtp.rules
+Reading rules file: /usr/lib/udev/rules.d/69-md-clustered-confirm-device.rules
+Reading rules file: /usr/lib/udev/rules.d/70-infrared.rules
+Reading rules file: /usr/lib/udev/rules.d/70-joystick.rules
+Reading rules file: /usr/lib/udev/rules.d/70-mouse.rules
+Reading rules file: /usr/lib/udev/rules.d/70-power-switch.rules
+Reading rules file: /usr/lib/udev/rules.d/70-touchpad.rules
+Reading rules file: /usr/lib/udev/rules.d/70-uaccess.rules
+Reading rules file: /usr/lib/udev/rules.d/71-seat.rules
+Reading rules file: /usr/lib/udev/rules.d/73-seat-late.rules
+Reading rules file: /usr/lib/udev/rules.d/75-net-description.rules
+Reading rules file: /usr/lib/udev/rules.d/75-probe_mtd.rules
+Reading rules file: /usr/lib/udev/rules.d/78-sound-card.rules
+Reading rules file: /usr/lib/udev/rules.d/80-drivers.rules
+Reading rules file: /usr/lib/udev/rules.d/80-libinput-device-groups.rules
+Reading rules file: /usr/lib/udev/rules.d/80-net-setup-link.rules
+Reading rules file: /usr/lib/udev/rules.d/80-udisks2.rules
+Reading rules file: /usr/lib/udev/rules.d/84-nm-drivers.rules
+Reading rules file: /usr/lib/udev/rules.d/85-nm-unmanaged.rules
+Reading rules file: /usr/lib/udev/rules.d/85-tlp.rules
+Reading rules file: /usr/lib/udev/rules.d/89-alsa-ucm.rules
+Reading rules file: /usr/lib/udev/rules.d/90-alsa-restore.rules
+Reading rules file: /usr/lib/udev/rules.d/90-backlight.rules
+Reading rules file: /usr/lib/udev/rules.d/90-brightnessctl.rules
+Reading rules file: /usr/lib/udev/rules.d/90-libinput-fuzz-override.rules
+Reading rules file: /usr/lib/udev/rules.d/90-nm-thunderbolt.rules
+Reading rules file: /usr/lib/udev/rules.d/90-pulseaudio.rules
+Reading rules file: /usr/lib/udev/rules.d/90-vconsole.rules
+Reading rules file: /usr/lib/udev/rules.d/95-cd-devices.rules
+Reading rules file: /usr/lib/udev/rules.d/95-dm-notify.rules
+Reading rules file: /usr/lib/udev/rules.d/95-upower-csr.rules
+Reading rules file: /usr/lib/udev/rules.d/95-upower-hid.rules
+Reading rules file: /usr/lib/udev/rules.d/95-upower-hidpp.rules
+Reading rules file: /usr/lib/udev/rules.d/95-upower-wup.rules
+Reading rules file: /usr/lib/udev/rules.d/96-e2scrub.rules
+Reading rules file: /usr/lib/udev/rules.d/99-fuse.rules
+Reading rules file: /usr/lib/udev/rules.d/99-fuse3.rules
+Reading rules file: /usr/lib/udev/rules.d/99-systemd.rules
+Reading rules file: /etc/udev/rules.d/99_battery_threshold.rules
+BAT0: /etc/udev/rules.d/99_battery_threshold.rules:1 Failed to write ATTR<span class="o">{</span>/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:19/PNP0C09:01/PNP0C0A:03/power_supply/BAT0/charge_control_end_threshold<span class="o">}</span>, ignoring: Permission denied
+<span class="nv">DEVPATH</span><span class="o">=</span>/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:19/PNP0C09:01/PNP0C0A:03/power_supply/BAT0
+<span class="nv">POWER_SUPPLY_NAME</span><span class="o">=</span>BAT0
+<span class="nv">POWER_SUPPLY_STATUS</span><span class="o">=</span>Not charging
+<span class="nv">POWER_SUPPLY_PRESENT</span><span class="o">=</span>1
+<span class="nv">POWER_SUPPLY_TECHNOLOGY</span><span class="o">=</span>Li-ion
+<span class="nv">POWER_SUPPLY_CYCLE_COUNT</span><span class="o">=</span>35
+<span class="nv">POWER_SUPPLY_VOLTAGE_MIN_DESIGN</span><span class="o">=</span>11400000
+<span class="nv">POWER_SUPPLY_VOLTAGE_NOW</span><span class="o">=</span>11400000
+<span class="nv">POWER_SUPPLY_POWER_NOW</span><span class="o">=</span>0
+<span class="nv">POWER_SUPPLY_ENERGY_FULL_DESIGN</span><span class="o">=</span>48336000
+<span class="nv">POWER_SUPPLY_ENERGY_FULL</span><span class="o">=</span>45349000
+<span class="nv">POWER_SUPPLY_ENERGY_NOW</span><span class="o">=</span>35260000
+<span class="nv">POWER_SUPPLY_CAPACITY</span><span class="o">=</span>77
+<span class="nv">POWER_SUPPLY_CAPACITY_LEVEL</span><span class="o">=</span>Normal
+<span class="nv">POWER_SUPPLY_MODEL_NAME</span><span class="o">=</span>ASUS Battery
+<span class="nv">POWER_SUPPLY_MANUFACTURER</span><span class="o">=</span>ASUSTeK
+<span class="nv">POWER_SUPPLY_SERIAL_NUMBER</span><span class="o">=</span>
+<span class="nv">ACTION</span><span class="o">=</span>add
+<span class="nv">SUBSYSTEM</span><span class="o">=</span>power_supply
+<span class="nv">USEC_INITIALIZED</span><span class="o">=</span>1882376914
+Unload module index
+Unloaded <span class="nb">link </span>configuration context.</code></pre></figure>
+
+</div>
+
+<h1 id="تنظیم-آستانه-شارژ-با-udev">تنظیم آستانه شارژ با <code class="language-plaintext highlighter-rouge">udev</code></h1>
+
+<p>چنانچه می‌خواهید همواره با بوت شدن سیستم‌ آستانه شارژ روی مقدار مشخصی تنظیم شود می‌توانید با افزودن <code class="language-plaintext highlighter-rouge">udev rule</code> و تنظیم مقدار <code class="language-plaintext highlighter-rouge">threshold</code> در زمان بوت شدن سیستم این کار را انجام دهید.</p>
+
+<p>برای انجام این کار می‌بایست یک فایل جدید با پسوند ‎<code class="language-plaintext highlighter-rouge">.ruls</code>‬ در مسیر ‎<code class="language-plaintext highlighter-rouge">/etc/udev/rules.d</code>‬ بسازید.</p>
+
+<p>تنظیمات فایل من به این صورت است:</p>
+
+<div class="code-block">
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cat</span> /etc/udev/rules.d/99_battery_threshold.rules
+<span class="nv">KERNEL</span><span class="o">==</span><span class="s2">"BAT[0-9]"</span>, <span class="nv">SUBSYSTEM</span><span class="o">==</span><span class="s2">"power_supply"</span>, ATTR<span class="o">{</span>charge_control_end_threshold<span class="o">}=</span><span class="s2">"60"</span></code></pre></figure>
+
+</div>
+
+<p>برای درک بیشتر <code class="language-plaintext highlighter-rouge">udev</code> و چگونگی استفاده از آن برای ارتباط با ماژول‌های کرنل می‌توانید به این صفحه در <a href="https://wiki.archlinux.org/index.php/Udev#udev_rule_example">ویکی آرچ لینوکس</a> مراجعه کنید.</p>]]></content><author><name>اسم شما</name><email>your@email.address</email></author><category term="unix/linux" /><category term="udev" /><summary type="html"><![CDATA[تنظیم آستانه شارژ باتری در گنو/لینوکس]]></summary></entry><entry><title type="html">سیمرغ</title><link href="http://localhost:4000/simorq/" rel="alternate" type="text/html" title="سیمرغ" /><published>2020-08-07T09:58:47+04:30</published><updated>2020-08-07T09:58:47+04:30</updated><id>http://localhost:4000/simorq</id><content type="html" xml:base="http://localhost:4000/simorq/"><![CDATA[<h1 id="سیمرغ">سیمرغ</h1>
+
+<p>سیمرغ قرار است یک تم Jekyll برای فارسی نویسی باشد. یک تم مینیمال که با تغییر فایل کانفیگ به راحتی بتوانید آن را برای راه‌اندازی وبلاگ شخصی خودتان استفاده کنید.</p>
+
+<p>برای شروع این پروژه یک فورک از تم <a href="https://klise.now.sh"><code class="language-plaintext highlighter-rouge">klise</code></a> استفاده شده است که <a href="https://github.com/piharpi/jekyll-klise">اینجا</a> در دسترس است.</p>
+
+<p>برای فارسی کردن تاریخ‌ها از پلاگین <a href="https://github.com/mehdisadeghi/jekyll-jalali"><code class="language-plaintext highlighter-rouge">jekyll-jalali</code></a> استفاده کردم که <a href="https://github.com/mehdisadeghi/">مهدی صادقی</a> گرامی نوشته و کلی مطلب مفید هم در <a href="https://mehdix.ir/">وبلاگش</a> دارد که اگر تصمیم دارید از Jekyll استفاده کنید حتما بهش سر بزنید.</p>
+
+<p>در این تم از فونت‌های <a href="https://github.com/rastikerdar/vazir-font"><code class="language-plaintext highlighter-rouge">وزیر</code></a> و <a href="https://github.com/rastikerdar/vazir-code-font"><code class="language-plaintext highlighter-rouge">وزیر کد</code></a> استفاده شده است که از کارهای زیبای آقای <a href="https://github.com/rastikerdar">راستی‌کردار</a> است که از ایشان بسیار ممنونم.</p>
+
+<h2 id="قابلیتها">قابلیت‌ها</h2>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />تم تاریک و روشن</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />پشتیبانی از تاریخ فارسی</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />تغییر ظاهر با استفاده از scss</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />هماهنگ با دسکتاپ و گوشی</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />ساختار مناسب برای عکس‌ها (<a href="https://github.com/nhoizey/jekyll-postfiles"><code class="language-plaintext highlighter-rouge">jekyll-postfiles</code></a>)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />نقشه سایت (<a href="https://github.com/jekyll/jekyll-sitemap"><code class="language-plaintext highlighter-rouge">jekyll-sitemap</code></a>)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />خوراک rss (<a href="https://github.com/jekyll/jekyll-feed"><code class="language-plaintext highlighter-rouge">jekyll-feed</code></a>)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />هایلایت کدها (<a href="https://github.com/rastikerdar/vazir-code-font"><code class="language-plaintext highlighter-rouge">Vazir Code Font</code></a>) با تشکر مجدد از جناب <a href="https://github.com/rastikerdar/">راستی کردار</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />صفحه بندی پست‌ها</li>
+  <li class="task-list-item">[] پشتیبانی از کامنت‌دونی</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />آنالیز گوگل اگر دوست دارید استفاده کنید. (نکنید 😠)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />استفاده از W3C <strong>👽</strong></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />استفاده از فونت Awesome <strong>👽</strong></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />سبک و سریع <strong>🚄</strong></li>
+</ul>
+
+<h2 id="نصب">نصب</h2>
+
+<p>راه انداختن سرور local روی سیستم شخصی:</p>
+
+<div class="code-block">
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git clone https://github.com/mhdzli/simorq.git
+<span class="nv">$ </span><span class="nb">cd </span>simorq
+<span class="nv">$ </span>bundle <span class="nb">install</span>
+<span class="nv">$ </span>bundle <span class="nb">exec </span>jekyll serve</code></pre></figure>
+
+</div>
+
+<p>با آدرس <code class="language-plaintext highlighter-rouge">localhost:4000</code> می‌توانید نتیجه را در مرورگرتان مشاهده کنید.</p>
+
+<p><a href="https://app.netlify.com/start/deploy?repository=https://github.com/mhdzli/simorq"><img src="https://www.netlify.com/img/deploy/button.svg" alt="دیپلوی در Netlify" /></a> <a href="https://vercel.com/import/project?template=https://github.com/mhdzli/simorq"><img src="https://vercel.com/button" alt="دیپلوی با Vercel" /></a></p>
+
+<h2 id="محدودیتها">محدودیت‌ها</h2>
+
+<ul>
+  <li>از آنجا که پلاگین  <a href="https://github.com/nhoizey/jekyll-postfiles#compatibility"><code class="language-plaintext highlighter-rouge">jekyll-postfiles</code></a> و  <a href="https://github.com/mehdisadeghi/jekyll-jalali"><code class="language-plaintext highlighter-rouge">jekyll-jalali</code></a>  در <code class="language-plaintext highlighter-rouge">github pages</code> پشتیبانی نمی‌شوند امکان استفاده  روی گیتهاب وجود ندارد اما میتوانید از  <a href="https://netlify.com"><code class="language-plaintext highlighter-rouge">netlify.com</code></a>، <a href="https://vercel.com"><code class="language-plaintext highlighter-rouge">vercel.com</code></a> یا <a href="https://surge.sh"><code class="language-plaintext highlighter-rouge">surge.sh</code></a> استفاده کنید.</li>
+</ul>
+
+<h2 id="مجوز">مجوز</h2>
+
+<p>یک پروژه آزاد با مجوز <a href="LICENSE">MIT</a>.</p>]]></content><author><name>اسم شما</name><email>your@email.address</email></author><category term="unix/linux" /><category term="سیمرغ" /><category term="jekyll" /><summary type="html"><![CDATA[سیمرغ قرار است یک تم Jekyll برای فارسی نویسی باشد. یک تم مینیمال که با تغییر فایل کانفیگ به راحتی بتوانید آن را برای راه‌اندازی وبلاگ شخصی خودتان استفاده کنید.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/simorq/simorq.png" /><media:content medium="image" url="http://localhost:4000/simorq/simorq.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

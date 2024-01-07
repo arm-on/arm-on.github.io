@@ -1,0 +1,57 @@
+I"Q<h1 id="سیمرغ">سیمرغ</h1>
+
+<p>سیمرغ قرار است یک تم Jekyll برای فارسی نویسی باشد. یک تم مینیمال که با تغییر فایل کانفیگ به راحتی بتوانید آن را برای راه‌اندازی وبلاگ شخصی خودتان استفاده کنید.</p>
+
+<p>برای شروع این پروژه یک فورک از تم <a href="https://klise.now.sh"><code class="language-plaintext highlighter-rouge">klise</code></a> استفاده شده است که <a href="https://github.com/piharpi/jekyll-klise">اینجا</a> در دسترس است.</p>
+
+<p>برای فارسی کردن تاریخ‌ها از پلاگین <a href="https://github.com/mehdisadeghi/jekyll-jalali"><code class="language-plaintext highlighter-rouge">jekyll-jalali</code></a> استفاده کردم که <a href="https://github.com/mehdisadeghi/">مهدی صادقی</a> گرامی نوشته و کلی مطلب مفید هم در <a href="https://mehdix.ir/">وبلاگش</a> دارد که اگر تصمیم دارید از Jekyll استفاده کنید حتما بهش سر بزنید.</p>
+
+<p>در این تم از فونت‌های <a href="https://github.com/rastikerdar/vazir-font"><code class="language-plaintext highlighter-rouge">وزیر</code></a> و <a href="https://github.com/rastikerdar/vazir-code-font"><code class="language-plaintext highlighter-rouge">وزیر کد</code></a> استفاده شده است که از کارهای زیبای آقای <a href="https://github.com/rastikerdar">راستی‌کردار</a> است که از ایشان بسیار ممنونم.</p>
+
+<h2 id="قابلیتها">قابلیت‌ها</h2>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />تم تاریک و روشن</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />پشتیبانی از تاریخ فارسی</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />تغییر ظاهر با استفاده از scss</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />هماهنگ با دسکتاپ و گوشی</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />ساختار مناسب برای عکس‌ها (<a href="https://github.com/nhoizey/jekyll-postfiles"><code class="language-plaintext highlighter-rouge">jekyll-postfiles</code></a>)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />نقشه سایت (<a href="https://github.com/jekyll/jekyll-sitemap"><code class="language-plaintext highlighter-rouge">jekyll-sitemap</code></a>)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />خوراک rss (<a href="https://github.com/jekyll/jekyll-feed"><code class="language-plaintext highlighter-rouge">jekyll-feed</code></a>)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />هایلایت کدها (<a href="https://github.com/rastikerdar/vazir-code-font"><code class="language-plaintext highlighter-rouge">Vazir Code Font</code></a>) با تشکر مجدد از جناب <a href="https://github.com/rastikerdar/">راستی کردار</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />صفحه بندی پست‌ها</li>
+  <li class="task-list-item">[] پشتیبانی از کامنت‌دونی</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />آنالیز گوگل اگر دوست دارید استفاده کنید. (نکنید 😠)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />استفاده از W3C <strong>👽</strong></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />استفاده از فونت Awesome <strong>👽</strong></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />سبک و سریع <strong>🚄</strong></li>
+</ul>
+
+<h2 id="نصب">نصب</h2>
+
+<p>راه انداختن سرور local روی سیستم شخصی:</p>
+
+<div class="code-block">
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git clone https://github.com/mhdzli/simorq.git
+<span class="nv">$ </span><span class="nb">cd </span>simorq
+<span class="nv">$ </span>bundle <span class="nb">install</span>
+<span class="nv">$ </span>bundle <span class="nb">exec </span>jekyll serve</code></pre></figure>
+
+</div>
+
+<p>با آدرس <code class="language-plaintext highlighter-rouge">localhost:4000</code> می‌توانید نتیجه را در مرورگرتان مشاهده کنید.</p>
+
+<p><a href="https://app.netlify.com/start/deploy?repository=https://github.com/mhdzli/simorq"><img src="https://www.netlify.com/img/deploy/button.svg" alt="دیپلوی در Netlify" /></a> <a href="https://vercel.com/import/project?template=https://github.com/mhdzli/simorq"><img src="https://vercel.com/button" alt="دیپلوی با Vercel" /></a></p>
+
+<h2 id="محدودیتها">محدودیت‌ها</h2>
+
+<ul>
+  <li>از آنجا که پلاگین  <a href="https://github.com/nhoizey/jekyll-postfiles#compatibility"><code class="language-plaintext highlighter-rouge">jekyll-postfiles</code></a> و  <a href="https://github.com/mehdisadeghi/jekyll-jalali"><code class="language-plaintext highlighter-rouge">jekyll-jalali</code></a>  در <code class="language-plaintext highlighter-rouge">github pages</code> پشتیبانی نمی‌شوند امکان استفاده  روی گیتهاب وجود ندارد اما میتوانید از  <a href="https://netlify.com"><code class="language-plaintext highlighter-rouge">netlify.com</code></a>، <a href="https://vercel.com"><code class="language-plaintext highlighter-rouge">vercel.com</code></a> یا <a href="https://surge.sh"><code class="language-plaintext highlighter-rouge">surge.sh</code></a> استفاده کنید.</li>
+</ul>
+
+<h2 id="مجوز">مجوز</h2>
+
+<p>یک پروژه آزاد با مجوز <a href="LICENSE">MIT</a>.</p>
+
+:ET
