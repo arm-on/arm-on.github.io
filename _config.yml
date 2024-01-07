@@ -122,20 +122,20 @@ special-pages:
 # --- Social ---
 
 # Social media links
-facebook:           MahdiBaghbanii
+#facebook:           MahdiBaghbanii
 #instagram:          username
 #tumblr:             username
 #pinterest:          username
 #flickr:             username
-twitter:            Baghbani1
+#twitter:            Baghbani1
 #weibo:              username
 #goodreads:          userUniqueID
-linkedin:           MahdiBaghbani
+linkedin:           arman-malekzadeh
 #xing:               username
 #youtube:            username
 #twitch              username
-gitlab:             MahdiBaghbani
-github:             MahdiBaghbani
+#gitlab:             MahdiBaghbani
+github:             arm-on
 #codepen:            username
 #dribbble:           username
 #behance:            username
@@ -151,10 +151,10 @@ github:             MahdiBaghbani
 #lichess:            username
 #chess:              username
 #keybase:            username
-telegram:           MahdiBaghbanii
+#telegram:           MahdiBaghbanii
 #xmpp:               username
-protonmail:         MahdiBaghbani@protonmail.com
-#email:              username
+#protonmail:         MahdiBaghbani@protonmail.com
+#email:              malekzadeh@ieee.org
 
 # select default share links for posts/pages
 # you can manually turn this off in each post/page setting
