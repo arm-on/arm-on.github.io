@@ -1,9 +1,9 @@
 # --- General Options ---
 
 # Name of website
-title: Kianic Jekyll Theme
-description: "Multi language, dual theme, stylish, two-column Jekyll theme for your blog."
-author: Mahdi Baghbani
+title: آرلینگو
+description: "تجربه من از یادگیری زبان‌های مختلف"
+author: آرمان
 
 # Website domain URL
 url:
@@ -17,7 +17,7 @@ kianic-skin: default
 # number of languages to be supported
 language-options:
   lang-number: 2
-  lang-default: english
+  lang-default: farsi
   lang-id:
     - title: english
     - title: farsi
@@ -212,7 +212,7 @@ defaults:
       lang: english
       base-url: "/english/"
       direction-format: ltr
-      author: Mahdi baghbani
+      author: Arman Malekzadeh
   -
     scope:
       # sub-folder
@@ -222,7 +222,7 @@ defaults:
       lang: farsi
       base-url: "/farsi/"
       direction-format: rtl
-      author: مهدی باغبانی
+      author: آرمان
 
 # --- Setup Configurations ---
 
