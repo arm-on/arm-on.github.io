@@ -14,34 +14,6 @@
       "folders": {},
       "files": {}
     },
-    "_pages": {
-      "name": "_pages",
-      "isOrdered": true,
-      "folders": {},
-      "files": {
-        "categories": 0,
-        "about": 1,
-        "tags": 2
-      }
-    },
-    "_posts": {
-      "name": "_posts",
-      "isOrdered": true,
-      "folders": {},
-      "files": {}
-    },
-    "_sass": {
-      "name": "_sass",
-      "isOrdered": true,
-      "folders": {},
-      "files": {}
-    },
-    "_site": {
-      "name": "_site",
-      "isOrdered": true,
-      "folders": {},
-      "files": {}
-    },
     "assets": {
       "name": "assets",
       "isOrdered": true,
@@ -73,15 +45,54 @@
       },
       "files": {}
     },
-    "site": {
-      "name": "site",
+    "_data": {
+      "name": "_data",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "english": {
+      "name": "english",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "farsi": {
+      "name": "farsi",
+      "isOrdered": true,
+      "folders": {
+        "_pages": {
+          "name": "_pages",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        },
+        "_posts": {
+          "name": "_posts",
+          "isOrdered": true,
+          "folders": {},
+          "files": {
+            "2024-01-07-french-pronounciations": 0
+          }
+        }
+      },
+      "files": {}
+    },
+    "gitlab-ci": {
+      "name": "gitlab-ci",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "script": {
+      "name": "script",
       "isOrdered": true,
       "folders": {},
       "files": {}
     }
   },
   "files": {
-    "changelog": 0,
-    "README": 1
+    "README": 0,
+    "CHANGELOG": 1
   }
 }
