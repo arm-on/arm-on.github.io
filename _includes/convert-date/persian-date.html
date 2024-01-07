@@ -1,0 +1,76 @@
+{% comment %}
+---
+# persian-date.html
+#
+# This file is a part of:
+# Azadeh Afzar - Azadeh Date Converter Library in Liquid.
+#
+# Copyright (C) 2019 - 2020 Azadeh Afzar
+# Copyright (C) 2019 - 2020 Mohammad Mahdi Baghbani Pourvahid
+# 
+# Converts english numbers into farsi numbers
+# and converts month numbers to persian month names
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU  General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU  General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+#
+# Permission is granted to anyone to use this software for any purpose,
+# including commercial applications, and to alter it and redistribute it
+# freely, subject to the following restrictions:
+#
+# 1. The origin of this software must not be misrepresented; you must not
+# claim that you wrote the original software. If you use this software
+# in a product, an acknowledgement in the product documentation would be
+# appreciated but is not required.
+#
+# 2. Altered source versions must be plainly marked as such, and must not be
+# misrepresented as being the original software.
+#
+# 3. This notice may not be removed or altered from any source distribution.
+---
+{% endcomment %}
+
+{% include convert-date/GregorianToJalali.html %}
+
+{% assign date-day = jalali_day | replace: '0', '۰' | replace: '1', '۱' | replace: '2', '۲' | replace: '3', '۳' | replace: '4', '۴' | replace: '5', '۵' | replace: '6', '۶' | replace: '7', '۷' | replace: '8', '۸' | replace: '9', '۹' %}
+
+{% assign month = jalali_month %}
+{% case month %}
+  {% when 1 %}
+    {% assign date-month = فروردین %}
+  {% when 2 %}
+    {% assign date-month = "اردیبهشت" %}
+  {% when 3 %}
+    {% assign date-month = خرداد %}
+  {% when 4 %}
+    {% assign date-month = تیر %}
+  {% when 5 %}
+    {% assign date-month = مرداد %}
+  {% when 6 %}
+    {% assign date-month = شهریور %}
+  {% when 7 %}
+    {% assign date-month = مهر %}
+  {% when 8 %}
+    {% assign date-month = آبان %}
+  {% when 9 %}
+    {% assign date-month = آذر %}
+  {% when 10 %}
+    {% assign date-month = دی %}
+  {% when 11 %}
+    {% assign date-month = بهمن %}
+  {% when 12 %}
+    {% assign date-month = اسفند %}
+{% endcase %}
+
+{% assign date-year = jalali_year | replace: '0', '۰' | replace: '1', '۱' | replace: '2', '۲' | replace: '3', '۳' | replace: '4', '۴' | replace: '5', '۵' | replace: '6', '۶' | replace: '7', '۷' | replace: '8', '۸' | replace: '9', '۹' | reverse %}

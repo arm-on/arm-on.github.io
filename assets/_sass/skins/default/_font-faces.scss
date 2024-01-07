@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Vazir';
+  src: local('Vazir-Variable');
+  src:
+    url('../fonts/Vazir/Vazir-Variable.woff2') format('woff2-variations'),
+    url('../fonts/Vazir/Vazir-Variable.woff') format('woff'),
+    url('../fonts/Vazir/Vazir-Variable.ttf') format('truetype');
+  font-weight: 125 950;
+  font-style: normal;
+  font-stretch: 75% 125%;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: local('Vazir-Regular');
+  src:
+    url('../fonts/Vazir/Vazir-Regular.woff2') format('woff2'),
+    url('../fonts/Vazir/Vazir-Regular.woff') format('woff'),
+    url('../fonts/Vazir/Vazir-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: local('Vazir-Thin');
+  src: 
+    url('../fonts/Vazir/Vazir-Thin.woff2') format('woff2'),
+    url('../fonts/Vazir/Vazir-Thin.woff') format('woff'),
+    url('../fonts/Vazir/Vazir-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: local('Vazir-Light');
+  src:
+    url('../fonts/Vazir/Vazir-Light.woff2') format('woff2'),
+    url('../fonts/Vazir/Vazir-Light.woff') format('woff'),
+    url('../fonts/Vazir/Vazir-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: local('Vazir-Medium');
+  src: 
+    url('../fonts/Vazir/Vazir-Medium.woff2') format('woff2'),
+    url('../fonts/Vazir/Vazir-Medium.woff') format('woff'),
+    url('../fonts/Vazir/Vazir-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: local('Vazir-Bold');
+  src:
+    url('../fonts/Vazir/Vazir-Bold.woff2') format('woff2'),
+    url('../fonts/Vazir/Vazir-Bold.woff') format('woff'),
+    url('../fonts/Vazir/Vazir-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: local('Vazir-Black');
+  src:
+    url('../fonts/Vazir/Vazir-Black.woff2') format('woff2'),
+    url('../fonts/Vazir/Vazir-Black.woff') format('woff'),
+    url('../fonts/Vazir/Vazir-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazir Code Hack';
+  src: local('Vazir-Code-Hack');
+  src:
+    url('../fonts/Vazir-Code/Vazir-Code-Hack.woff2') format('woff2'),
+    url('../fonts/Vazir-Code/Vazir-Code-Hack.woff') format('woff'),
+    url('../fonts/Vazir-Code/Vazir-Code-Hack.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sahel';
+  src: local('Sahel');
+  src:
+    url('../fonts/Sahel/Sahel.woff2') format('woff2'),
+    url('../fonts/Sahel/Sahel.woff') format('woff'),
+    url('../fonts/Sahel/Sahel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sahel';
+  src: local('Sahel-Bold');
+  src: 
+    url('../fonts/Sahel/Sahel-Bold.woff2') format('woff2'),
+    url('../fonts/Sahel/Sahel-Bold.woff') format('woff'),
+    url('../fonts/Sahel/Sahel-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sahel';
+  src: local('Sahel-Black');
+  src: 
+    url('../fonts/Sahel/Sahel-Black.woff2') format('woff2'),
+    url('../fonts/Sahel/Sahel-Black.woff') format('woff'),
+    url('../fonts/Sahel/Sahel-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

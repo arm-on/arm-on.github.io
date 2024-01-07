@@ -1,0 +1,16 @@
+{% assign language-localized = site.data.localized-translation[page.lang] %}
+<footer class="footer">
+  {% case page.layout %}
+    {% when "home" %}
+      {% comment %} show nothing {% endcomment %}
+    {% when "page" %}
+      {% include copyright.html %}
+    {% when "post" %}
+      {% include copyright.html %}
+    {% else %}
+      {{ 'ERROR: page.layout in footer.html is not correct' }}
+  {% endcase %}
+  <div class="footer-text {{ page.direction-format }} {{ page.lang }}">
+    <p>{{ language-localized.footer-text }}</p>
+  </div>
+</footer>

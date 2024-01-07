@@ -1,0 +1,64 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+{% assign language-localized = site.data.localized-translation[page.lang] %}
+<html lang="{{ language-localized.locale }}">
+  {% include head.html %}
+  <body id="homepage">
+  {% include gtm-body.html %}
+  <div class="block-left">
+    <div class="content {{ page.direction-format }} {{ page.lang }}">
+      <div class="main-info {{ page.direction-format }} {{ page.lang }}">
+        {% include block-left-icons.html %}
+        <a class="logo" href="{{ site.url }}/{{ page.lang | replace: site.language-options.lang-default, '' }}">
+          <img alt="Site Logo" src="{{ site.url }}/{{ site.logo-images[ page.lang ].logo-main-homepage }}"
+               type="image/{{ site.logo-images[ page.lang ].logo-main-homepage-format }}">
+        </a>
+        <h1>
+          {{ page.title }}
+        </h1>
+        <p>
+          {{ page.description }}
+        </p>
+        {% include social-links.html %}
+      </div>
+    </div>
+    <canvas></canvas>
+  </div>
+
+  <div class="block-right">
+    <a class="mode-menu-icon home {{ page.direction-format }} {{ page.lang }} {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}"
+       title="{{ language-localized.mode-title-text }}">
+      <i aria-hidden="true" class="fa fa-fw fa-2x fa-moon" id="sun-moon"></i>
+    </a>
+    <span class="mode-link {{ page.direction-format }} {{ page.lang }} {% if site.language-options.lang-number < 2 %}no-adjacent-icon{% endif %}">
+      {{ language-localized.mode-span-text }}
+    </span>
+    {% if site.language-options.lang-number > 1 %}
+      <a class="languages-menu-icon home {{ page.direction-format }} {{ page.lang }}" title="{{ language-localized.change-language-title-text }}">
+        <i aria-hidden="true" class="fa fa-fw  fa-2x fa-inverse fa-language"></i>
+      </a>
+      <span class="languages-link {{ page.direction-format }} {{ page.lang }}">{{ language-localized.change-language-span-text }}</span>
+    {% endif %}
+    <a class="posts-menu-icon {{ page.direction-format }} {{ page.lang }}" href="{{ site.url }}/{{ page.lang }}/posts"
+       title="{{ language-localized.posts-title-text }}">
+      <i aria-hidden="true" class="fa fa-fw fa-2x fa-file-alt"></i>
+    </a>
+    <span class="posts-link {{ page.direction-format }} {{ page.lang }}">{{ language-localized.posts-span-text }}</span>
+    <a class="projects-menu-icon {{ page.direction-format }} {{ page.lang }}" title="{{ language-localized.projects-title-text }}">
+      <i aria-hidden="true" class="fa fa-fw fa-2x fa-cogs"></i></a>
+    <span
+      class="projects-link {{ page.direction-format }} {{ page.lang }}">{{ language-localized.projects-span-text }}</span>
+    <div class="content {{ page.direction-format }} {{ page.lang }}">
+      <div class="about-info {{ page.direction-format }} {{ page.lang }}">
+        {{ content }}
+        {% include footer.html %}
+      </div>
+    </div>
+  </div>
+  {% include overlay.html %}
+  {% include scripts.html %}
+  </body>
+</html>

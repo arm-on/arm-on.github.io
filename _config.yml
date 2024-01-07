@@ -1,0 +1,265 @@
+# --- General Options ---
+
+# Name of website
+title: Kianic Jekyll Theme
+description: "Multi language, dual theme, stylish, two-column Jekyll theme for your blog."
+author: Mahdi Baghbani
+
+# Website domain URL
+url:
+
+# Website theme skin
+# available skins: default
+kianic-skin: default
+
+# --- Multi Language Options ---
+
+# number of languages to be supported
+language-options:
+  lang-number: 2
+  lang-default: english
+  lang-id:
+    - title: english
+    - title: farsi
+
+# --- Background and Logo Options ---
+
+# use https://iconifier.net to create all favicon icons and apple touch png 
+# converting from png to webp is recommended!
+logo-images:
+  # specify image format you would like to use (example of valid choices: webp, png, jpeg)
+  favicon-image-format: webp
+  apple-touch-image-format: webp
+
+  # specify path for images.
+  favicon: assets/images/favicon.webp
+  favicon-ico: assets/images/favicon.ico
+
+  apple-touch-icon: assets/images/apple-touch-icon.webp
+  apple-touch-icon-57x57: assets/images/apple-touch-icon-57x57.webp
+  apple-touch-icon-72x72: assets/images/apple-touch-icon-72x72.webp
+  apple-touch-icon-76x76: assets/images/apple-touch-icon-76x76.webp
+  apple-touch-icon-114x114: assets/images/apple-touch-icon-114x114.webp
+  apple-touch-icon-120x120: assets/images/apple-touch-icon-120x120.webp
+  apple-touch-icon-144x144: assets/images/apple-touch-icon-144x144.webp
+  apple-touch-icon-152x152: assets/images/apple-touch-icon-152x152.webp
+  apple-touch-icon-180x180: assets/images/apple-touch-icon-180x180.webp
+
+  # site main logo
+  # ordered by language, this way you can set different mail logo for different languages!
+  # recommend: use svg format or webp
+  # size recommendation:
+  # - main-homepage 200x200
+  # - main-other-pages 50x50
+  english:
+    # specify image format you would like to use (example of valid choices: webp, png, jpeg)
+    logo-main-homepage-format: webp
+    logo-main-other-pages-format: webp
+
+    # specify path for images.
+    logo-main-homepage: assets/images/logo-en.webp
+    logo-main-other-pages: assets/images/logo-small-en.webp
+  farsi:
+    # specify image format you would like to use (example of valid choices: webp, png, jpeg)
+    logo-main-homepage-format: webp
+    logo-main-other-pages-format: webp
+
+    # specify path for images.
+    logo-main-homepage: assets/images/logo-fa.webp
+    logo-main-other-pages: assets/images/logo-small-fa.webp
+
+# Left Block Images
+background:
+  # this image will be shown on homepage's left block
+  homepage: assets/images/Flat-Mountains.svg
+  # this image will be shown on post list page
+  post-list: assets/images/Rainbow-Vortex.svg
+  # this image will be shown when post's front matter doesn't specify any image
+  default-post: assets/images/Protruding-Squares.svg
+
+# --- Copyright info ---
+
+# will appear at footer of pages and post
+# can be left blank
+copyright:
+  license-name: "Creative Commons License BY-NC-SA 4.0"
+  license-link: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+
+  license-logo-format: webp
+  license-logo: "assets/images/cc-by-nc-sa.webp"
+
+# --- Jekyll Options ---
+
+# link generation style
+permalink:          /:categories/:title/
+
+# markdown compiler
+markdown:           kramdown
+highlighter:        rouge
+
+# kramdown settings
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+
+# specify css path and style
+sass:
+  load_paths:
+    - assets/_sass
+    - assets/plugins
+  style:            compressed
+
+# Custom pages
+special-pages:
+  resume:        false
+  support-me:    true
+  about-me:      true
+  legal:         true
+
+# --- Social ---
+
+# Social media links
+facebook:           MahdiBaghbanii
+#instagram:          username
+#tumblr:             username
+#pinterest:          username
+#flickr:             username
+twitter:            Baghbani1
+#weibo:              username
+#goodreads:          userUniqueID
+linkedin:           MahdiBaghbani
+#xing:               username
+#youtube:            username
+#twitch              username
+gitlab:             MahdiBaghbani
+github:             MahdiBaghbani
+#codepen:            username
+#dribbble:           username
+#behance:            username
+#stackoverflow:      username
+#hackernews:         username
+#reddit:             username
+#quora:              username
+#foursquare:         username
+#lastfm:             username
+#soundcloud:         username
+#steam:              username
+#fide:               username
+#lichess:            username
+#chess:              username
+#keybase:            username
+telegram:           MahdiBaghbanii
+#xmpp:               username
+protonmail:         MahdiBaghbani@protonmail.com
+#email:              username
+
+# select default share links for posts/pages
+# you can manually turn this off in each post/page setting
+share:
+  facebook: true
+  twitter: true
+  linkedin: true
+
+#emoji:
+#   src: "assets/icons"
+#   asset: "emoji"
+#   extension: "png"
+
+# --- katex plugin settings ---
+
+katex:
+  rendering_options:
+    throw_error: true
+    error_color: "#cc0000"
+
+# --- Web Trackers ---
+# you can enable as many options as you want but be advised
+# it will make your site slightly slower 
+
+# Google Analytics
+# recommendation: use gtag instead.
+# google-analytics: UA-xxxxx-x
+
+# Google Global Site Tag
+# google-gtag: UA-xxxxx-x
+
+# Google Tag Manager
+# this tag manager job is to track social outbound links
+# and contact links such as: mailto:, tel:
+# google-gtm: GTM-xxxxxxx
+
+# Heap Analytics
+# heap-analytics: xxxxxxxx
+
+# --- Localization Options ---
+
+# you can remove unused ones
+# for example if your site is only available in English and German,
+# you can remove all other from list below and only keep those two
+
+# if you don't remove, it is still ok!
+
+defaults:
+  -
+    scope:
+      # sub-folder
+      path: english
+    values:
+      # language name, sub-domain and direction (ltr, rtl)
+      lang: english
+      base-url: "/english/"
+      direction-format: ltr
+      author: Mahdi baghbani
+  -
+    scope:
+      # sub-folder
+      path: farsi
+    values:
+      # language name, sub-domain and direction (ltr, rtl)
+      lang: farsi
+      base-url: "/farsi/"
+      direction-format: rtl
+      author: مهدی باغبانی
+
+# --- Setup Configurations ---
+
+# Ruby Gems
+plugins:
+  - jekyll-openmoji
+  - jekyll-katex
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+
+whitelist:
+  - jekyll-openmoji
+  - jekyll-katex
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+
+# Include list
+include:
+  - CNAME
+  - _pages
+
+# Exclude list
+exclude:
+  - CHANGELOG.md
+  - Gemfile
+  - Gemfile.lock
+  - gitlab-ci
+  - LICENSE
+  - Rakefile
+  - README.md
+  - src
+  - script
+  - vendor
+  - _site
+  - .DS_Store
+  - .gitignore
+  - .idea,
+  - .sass-cache

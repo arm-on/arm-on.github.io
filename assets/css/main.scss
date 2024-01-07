@@ -1,0 +1,26 @@
+---
+sitemap: false
+---
+
+{% assign selected-skin = site.kianic-skin | default: 'default' %}
+
+@charset "utf-8";
+
+// Load selected skin
+@import "skins/{{ selected-skin }}/main";
+
+// Load site styles
+@import "variables";
+@import "reset";
+@import "base";
+@import "utilities";
+@import "site";
+@import "vendor/kianic-icons";
+
+// Set plugin paths.
+$kiasimcons-path: "../plugins/kiasimcons/icons";
+$kiaflagcons-path: "../plugins/kiaflagcons/icons";
+
+// Load plugins.
+@import "kiasimcons/kiasimcons";
+@import "kiaflagcons/kiaflagcons";

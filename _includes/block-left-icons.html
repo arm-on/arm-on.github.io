@@ -1,0 +1,41 @@
+{% assign language-localized = site.data.localized-translation[page.lang] %}
+
+{% if site.special-pages.support-me %}
+  <a class="support-menu-icon
+      {% if site.special-pages.about-me != true or site.special-pages.legal != true %}
+          {% assign add-to-class = 'no-adjacent-icon' %}
+      {% endif %}
+      {% if site.special-pages.about-me != true and site.special-pages.legal != true %}
+          {% assign add-to-class = 'no-icon' %}
+      {% endif %}
+      {{ add-to-class }}" href="{{ site.url }}/{{ page.lang }}/support"
+     title="{{ language-localized.support-title-text}}">
+    <i aria-hidden="true" class="fa fa-fw  fa-2x fa-inverse fa-handshake"></i>
+  </a>
+  {% if page.layout == 'home' %}
+    <span class="support-link {{ page.direction-format }} {{ page.lang }} {{ add-to-class }}">{{ language-localized.support-span-text }}</span>
+  {% endif %}
+{% endif %}
+
+{% if site.special-pages.about-me %}
+  <a class="about-menu-icon
+      {% if site.special-pages.legal != true %}
+          {% assign add-to-class = 'no-adjacent-icon' %}
+      {% endif %}
+      {{ add-to-class }}" href="{{ site.url }}/{{ page.lang }}/about" title="{{ language-localized.about-title-text }}">
+    <i aria-hidden="true" class="fa fa-fw  fa-2x fa-inverse fa-user-circle"></i>
+  </a>
+  {% if page.layout == 'home' %}
+    <span class="about-link {{ page.direction-format }} {{ page.lang }} {{ add-to-class }}">{{ language-localized.about-span-text }}</span>
+  {% endif %}
+{% endif %}
+
+{% if site.special-pages.legal %}
+  <a class="legal-menu-icon" href="{{ site.url }}/{{ page.lang }}/legal"
+     title="{{ language-localized.legal-title-text }}">
+    <i aria-hidden="true" class="fa fa-fw  fa-2x fa-inverse fa-balance-scale"></i>
+  </a>
+  {% if page.layout == 'home' %}
+    <span class="legal-link {{ page.direction-format }} {{ page.lang }}">{{ language-localized.legal-span-text }}</span>
+  {% endif %}
+{% endif %}

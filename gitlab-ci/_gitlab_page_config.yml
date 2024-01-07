@@ -1,0 +1,4 @@
+### Development configs for gitlab ci deployments.
+
+# Website domain URL
+url: https://azadeh-afzar.gitlab.io/Web-Development/Kianic-Jekyll-Theme

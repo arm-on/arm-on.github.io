@@ -1,0 +1,40 @@
+{% if page.lang-ref != nil %}
+  {% assign has-lang-ref = true %}
+{% endif %}
+
+{% case page.layout %}
+  {% when 'post' %}
+    {% assign posts = site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+  {% when 'page' %}
+    {% assign posts = site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+  {% else %}
+    {{ 'ERROR: page.layout in change-language is not correct' }}
+{% endcase %}
+
+{% for target_post in posts %}
+  {% if target_post.url != page.url and target_post.lang != page.lang %}
+    {% assign has_other_lang = true %}
+  {% endif %}
+{% endfor %}
+
+{% if has_other_lang == true and has-lang-ref == true %}
+{% assign language-localized = site.data.localized-translation[page.lang] %}
+<ul class="change-language {{ page.direction-format }} {{ page.lang }}" id="change-lang">
+  <em>
+    {{ language-localized.read-in-other-language }}
+  </em>
+  <ul>
+    {% for target_post in posts %}
+      {% assign target_language_localized = site.data.localized-translation[target_post.lang] %}
+      {% if target_post.url != page.url and target_post.lang != page.lang %}
+      <li>
+        <a href="{{ site.url }}{{ target_post.url }}"
+           title="{{ language-localized.read-in-text }} {{ target_language_localized.label[page.lang] }}">
+          {{ target_language_localized.icon }} {{ target_language_localized.label[page.lang]}}
+        </a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</ul>
+{% endif %}

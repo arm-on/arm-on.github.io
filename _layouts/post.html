@@ -1,0 +1,82 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+{% assign language-localized = site.data.localized-translation[page.lang] %}
+<html lang="{{ language-localized.locale }}">
+  {% include head.html %}
+  <body class="inner-post-page" id="posts">
+  {% include gtm-body.html %}
+  <div class="block-left">
+    <div class="content {{ page.direction-format }} {{ page.lang }}">
+      {% include block-left-icons.html %}
+      <a class="logo" href="{{ site.url }}/{{ page.lang | replace: site.language-options.lang-default, '' }}">
+        <img alt="site logo" src="{{ site.url }}/{{ site.logo-images[ page.lang ].logo-main-other-pages }}"
+             type="image/{{ site.logo-images[ page.lang ].logo-main-other-pages-format }}">
+      </a>
+      <div class="post-title-section {{ page.direction-format }} {{ page.lang }}">
+        <div class="section-line">
+          {{ language-localized.section-line-posts }}
+          <em>/</em>
+        </div>
+        <h1 class="section-title {{ page.direction-format }} {{ page.lang }}">
+          {{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}
+        </h1>
+        <ul class="tags {{ page.direction-format }} {{ page.lang }}">
+          {% for tag in page.tags %}
+            <li>
+              <a class="tag-link" href="{{ site.url }}/{{ page.lang }}/tags">{{ tag }}</a>
+            </li>
+            {% unless forloop.last %}
+            {% endunless %}
+          {% endfor %}
+        </ul>
+        <div class="section-line reverse">
+          <a class="section-line-link" href="{{ site.url }}/{{ page.lang }}/posts">
+            {{ language-localized.back-to-posts }}
+          </a>
+          <em>/</em>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-right">
+    <div class="read-progress-bar {{ page.direction-format }}"></div>
+    {% assign has-other-lang = false %}
+    {% if site.language-options.lang-number > 1 and page.lang-ref != nil %}
+      {% assign posts = site.posts | where: "lang-ref", page.lang-ref %}
+      {% for target-post in posts %}
+        {% if target-post.url != page.url and target-post.lang != page.lang %}
+          {% assign has-other-lang = true %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    <a class="mode-menu-icon {% if has-other-lang == false %}no-adjacent-icon{% endif %}" title="{{ language-localized.mode-title-text }}">
+      <i aria-hidden="true" class="fa fa-fw fa-2x fa-moon" id="sun-moon"></i>
+    </a>
+    {% if has-other-lang == true %}
+      <a class="languages-menu-icon-posts" href="#change-lang" title="{{ language-localized.change-language-title-text }}">
+        <i aria-hidden="true" class="fa fa-fw fa-2x fa-language"></i>
+      </a>
+    {% endif %}
+    {% include block-right-icons.html %}
+    <div class="inner-post content {{ page.direction-format }} {{ page.lang }}">
+      <div class="date-highlight {{ page.direction-format }} {{ page.lang }}">
+        {% if page.date %}
+          <i aria-hidden="true" class="far fa-calendar"></i>&nbsp;
+          {% assign obj = page %}{% include convert-date/date-formatter.html %}{{ date-day }} {{ date-month }} {{ date-year }}{% else %}&#x2756;
+        {% endif %}
+      </div>
+      {{ content }}
+      {% include change-language.html %}
+      {% include share.html %}
+      {% include page-pagination.html %}
+      {% include footer.html %}
+    </div>
+  </div>
+  {% include scripts.html %}
+  {% include overlay.html %}
+  </body>
+</html>

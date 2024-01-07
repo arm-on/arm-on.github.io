@@ -1,0 +1,44 @@
+# language region
+locale: fa_IR
+label:
+  # language name in all languages available in this site
+  english: Farsi
+  farsi: پارسی
+# Image for country flag, using flag-icon-css files
+image: assets/plugins/kiaflagcons/icons/4x3/ir.svg
+# icon for country flag with flag-icon-css interface
+icon: <i class="kiaflagcons kiaflagcons-ir"></i>
+change-language-title-text: تغییر زبان
+change-language-span-text: زبان
+support-title-text: حمایت از من
+support-span-text: حمایت
+about-title-text: درباره من
+about-span-text: درباره من
+legal-title-text: شرایط استفاده
+legal-span-text: قوانین
+mode-title-text: حالت روز و شب
+mode-span-text: چراغ
+posts-title-text: سیاهه تارنوشت‌ها
+posts-span-text: تارنوشت‌ها
+projects-title-text: پروژه‌های من
+projects-span-text: پروژه‌ها
+section-line-posts: تارنوشت‌ها
+back-to-home: بازگشت به صفحه نخست
+back-to-posts: بازگشت به سیاهه
+next: بعدی
+previous: قبلی
+read-in-other-language: "این صفحه را به زبان دیگری بخوانید:"
+read-in-text: در زبان
+facebook: فیسبوک
+facebook-text: اشتراک گذاری در فیسبوک
+linkedin: لینکدین
+linkedin-text:  اشتراک گذاری در لینکدین
+twitter: توییتر
+twitter-text: اشتراک گذاری در توییتر
+
+copyright-text: " این اثر تحت مجوز عمومی گنو نسخه ۳ <i class='simple-icons simple-icons-gnu kianic-simple-icon-gnu'></i> منتشر شده است.
+                  <br>
+                  مطالب این تار‌نوشت تحت مجوز انتشار <i class='simple-icons simple-icons-creativecommons'></i> کریتیو کامنز نسخه ۴.۰ بین‌المللی منتشر شده‌اند."
+
+footer-text: "ساخته شده با علاقه <i class='fa fa-heart kianic-icon-heart' aria-hidden='true'></i> و جکیل<i class='kiasimcons kiasimcons-jekyll kiasimcons-color-jekyll'></i>،
+              میزبانی شده در در گیت‌لب <i class='fab fa-gitlab kianic-icon-gitlab' aria-hidden='true'></i>"

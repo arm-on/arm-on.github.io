@@ -1,0 +1,12 @@
+{% assign language-localized = site.data.localized-translation[page.lang] %}
+<div class="license {{ page.direction-format }} {{ page.lang }}">
+  {% if (site.copyright.license-name and site.copyright.license-link and site.copyright.license-logo) %}
+    <a rel="license" href="{{ site.copyright.license-link }}" target="_blank">
+      <img alt="{{ site.copyright.license-name }}" src="{{ site.url }}/{{ site.copyright.license-logo }}"
+           type="image/{{ site.copyright.license-logo-format }}">
+    </a>
+  {% endif %}
+  {% if language-localized.copyright-text %}
+    <p>{{ language-localized.copyright-text }}</p>
+  {% endif %}
+</div>
