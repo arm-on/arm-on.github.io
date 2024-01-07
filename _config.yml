@@ -17,7 +17,7 @@ kianic-skin: default
 # number of languages to be supported
 language-options:
   lang-number: 2
-  lang-default: farsi
+  lang-default: english
   lang-id:
     - title: english
     - title: farsi
