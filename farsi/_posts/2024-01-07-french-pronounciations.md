@@ -65,9 +65,9 @@ tags:
 |--|--|--|
 | ضمیر | فعل | تلفظ |
 |--|--|--|
-| je | mange | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704828160P37672-jemange.mp3" type="audio/mpeg"></audio> |
-| tu | manges | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704828164P375165-tumanges.mp3" type="audio/mpeg"></audio> |
-| il/elle/on | mange | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704828166P472283-ilmange.mp3" type="audio/mpeg"></audio> |
-| nous | mangeons | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704828169P588554-nousmangeons.mp3" type="audio/mpeg"></audio> |
-| vous | mangez | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704828171P661068-vousmangez.mp3" type="audio/mpeg"></audio> |
-| ils/elles | mangent | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704828173P407648-ilsmangent.mp3" type="audio/mpeg"></audio> |
+| je | mange | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704829215P481646-jemange.mp3" type="audio/mpeg"></audio> |
+| tu | manges | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704829218P16919-tumanges.mp3" type="audio/mpeg"></audio> |
+| il/elle/on | mange | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704829222P818767-ilmange.mp3" type="audio/mpeg"></audio> |
+| nous | mangeons | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704829228P09006-nousmangeons.mp3" type="audio/mpeg"></audio> |
+| vous | mangez | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704829231P8701298-vousmangez.mp3" type="audio/mpeg"></audio> |
+| ils/elles | mangent | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704829233P534909-ilsmangent.mp3" type="audio/mpeg"></audio> |
