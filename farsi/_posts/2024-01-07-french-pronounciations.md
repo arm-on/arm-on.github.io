@@ -56,5 +56,5 @@ tags:
 |--|--|
 | ترکیب | صدا | مثال | تلفظ مثال |
 |--|--|
-| | | |
+| | | <audio controls><source src="test.mp3" type="audio/mpeg"></audio> |
 | | | |
