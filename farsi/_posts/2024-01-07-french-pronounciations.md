@@ -63,7 +63,7 @@ tags:
 |--|--|--|
 | ضمیر | فعل | تلفظ |
 |--|--|--|
-| je | mange | <audio controls><source src="1704825944P922158-jemange.mp3" type="audio/mpeg"></audio> |
+| je | mange | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/ichbingut.mp3" type="audio/mpeg"></audio> |
 | tu | manges | <audio controls><source src="1704825946P387071-tumanges.mp3" type="audio/mpeg"></audio> |
 | il/elle/on | mange | <audio controls><source src="1704825947P7560709-ilmange.mp3" type="audio/mpeg"></audio> |
 | nous | mangeons | <audio controls><source src="1704825949P146952-nousmangeons.mp3" type="audio/mpeg"></audio> |
