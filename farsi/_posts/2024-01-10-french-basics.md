@@ -100,3 +100,20 @@ tags:
 
 - جواب‌دادن:
 
+|--|--|--|--|--|
+| کلمه/عبارت | ترجمه | نقش | جنسیت | تلفظ |
+|--|--|--|--|--|
+| Je vais bien, merci. | حالم خوب است، ممنون |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919249P817128-jevaisbienmerci.mp3" type="audio/mpeg"></audio> |
+| Très bien, merci. | خیلی خوب ممنون |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919256P447335-trèsbienmerci.mp3" type="audio/mpeg"></audio> |
+| Ça va super. | عالی پیش میره |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919258P761444-çavasuper.mp3" type="audio/mpeg"></audio> |
+| Ça va bien. | من خوبم. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919260P7827-çavabien.mp3" type="audio/mpeg"></audio> |
+| Ça va pas mal. | نه خیلی بد. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919262P421757-çavapasmal.mp3" type="audio/mpeg"></audio> |
+| Ça va mal. | اوضاع بد است. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919264P1044931-çavamal.mp3" type="audio/mpeg"></audio> |
+| Ça va. | چطور هستید. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919267P120472-çava.mp3" type="audio/mpeg"></audio> |
+| Comme ci comme ça. | نه خوب نه بد. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919274P436682-commecicommeça.mp3" type="audio/mpeg"></audio> |
+| pas mal. | بد نیست. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919276P0974011-pasmal.mp3" type="audio/mpeg"></audio> |
+| Pas pire. | بدتر نیست. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919278P736414-paspire.mp3" type="audio/mpeg"></audio> |
+| Rien de neuf. | چیز جدیدی نیست. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919280P8947148-riendeneuf.mp3" type="audio/mpeg"></audio> |
+| Rien d'important. | چیز مهمی نیست. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919284P2955039-riendimportant.mp3" type="audio/mpeg"></audio> |
+| Rien de bien. | هیچ چیز خاصی نیست. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919287P6499689-riendebien.mp3" type="audio/mpeg"></audio> |
+| Tout va bien. | همه چیز خوب است. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919290P136179-toutvabien.mp3" type="audio/mpeg"></audio> |
