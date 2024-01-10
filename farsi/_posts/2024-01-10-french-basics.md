@@ -124,3 +124,13 @@ tags:
 | Rien de bien. | هیچ چیز خاصی نیست. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919287P6499689-riendebien.mp3" type="audio/mpeg"></audio> |
 | Tout va bien. | همه چیز خوب است. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919290P136179-toutvabien.mp3" type="audio/mpeg"></audio> |
 
+## پرسیدن سن
+
+|--|--|--|--|--|
+| کلمه/عبارت | ترجمه | نقش | جنسیت | تلفظ |
+|--|--|--|--|--|
+| âge | سن | اسم | مذکر | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704921364P66048-âge.mp3" type="audio/mpeg"></audio> |
+| Quel âge avez vous ? | شما چند سال دارید ؟ |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704921371P13963-quelâgeavezvous.mp3" type="audio/mpeg"></audio> |
+| Quel âge a tu? | شما چند سال دارید؟ |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704921375P2618592-quelâgeatu.mp3" type="audio/mpeg"></audio> |
+| j'ai 27 ans | من 27 سالمه |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704921378P676258-jai27ans.mp3" type="audio/mpeg"></audio> |
+

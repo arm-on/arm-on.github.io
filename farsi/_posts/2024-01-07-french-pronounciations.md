@@ -51,23 +51,32 @@ tags:
 
 ## قواعد
 
-حالا این حروف وقتی در کنار هم قرار میگیرن، برای تلفظ‌شون یه سری قواعد هست.
+|--|--|--|--|
+| حروف | تلفظ | مثال | تلفظ مثال |
+|--|--|--|--|
+| ai | اِ | saison | سِزُنْ - ن تو دماغی |
+| ay | اِیْ | crayon | کْخِیُنْ - ن تو دماغی |
+| au | اُ | restaurant | رِسْتُقُ |
+| c + {a - o - u - r - l} | ک | commode | کُمُدْ |
+| c + {e - i - y} | س | police | پُلیس |
+| ch | ش | chance | شانْس - ن تو دماغی |
+| eau | اُ | chapeau | شَپُ |
+| e + consonne + consonne | اِ | merci | مِغْسی |
+| ei | اِ | seize | سِزْ |
+| eil | اِی | soleil | سُلِیْ |
+| eu | اُ | bleu | بْلُ |
+| er / ez / et / est | اِ - در پایان کلمه | violet | ویُلِ |
+| g + {a - o - u} | گ | garçon | گَغْسُ |
+| g + {e - i - y} | ژ | girafe | ژیغَفْ |
+| gu | گ | guitare | گیتَقْ |
+| gn | نْیِ | allemagne | اَلْمَنْیِ |
+| ille | ای | cédille | سِدی |
+| oi | او اَ | moi | مو اَ |
+| ou / où | او | boulevard | بولْوَقْ |
+| ph | ف | photo | فُتُ |
+| qu | ک | quelle | کِلْ |
+| {c, t, p, f} + r| خ | trente | تْخُنْتْ |
+| tion | سیون | décoration | دِکُقَسیون - ن تو دماغی |
+| ssion | سیون | profession | پْخُفِسیون - ن تو دماغی |
+| ui | اویی | suite | سوییت | 
 
-|--|--|
-| ترکیب | صدا | مثال | تلفظ مثال |
-|--|--|
-| | | <audio controls><source src="test.mp3" type="audio/mpeg"></audio> |
-| | | |
-
-
-## فعل mangent (غذا خوردن)
-
-|--|--|--|
-| ضمیر | فعل | تلفظ |
-|--|--|--|
-| je | mange | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704829215P481646-jemange.mp3" type="audio/mpeg"></audio> |
-| tu | manges | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704829218P16919-tumanges.mp3" type="audio/mpeg"></audio> |
-| il/elle/on | mange | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704829222P818767-ilmange.mp3" type="audio/mpeg"></audio> |
-| nous | mangeons | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704829228P09006-nousmangeons.mp3" type="audio/mpeg"></audio> |
-| vous | mangez | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704829231P8701298-vousmangez.mp3" type="audio/mpeg"></audio> |
-| ils/elles | mangent | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704829233P534909-ilsmangent.mp3" type="audio/mpeg"></audio> |
