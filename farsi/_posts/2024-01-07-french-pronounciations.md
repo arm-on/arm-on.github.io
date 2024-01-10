@@ -63,7 +63,7 @@ tags:
 | è | accent grave | اِ کشیده | père | پِقْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704925248P895766-père.mp3" type="audio/mpeg"></audio> |
 | ê | accent circonflexe / accent chapeau | اِ کوتاه | fête | فِت | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704925254P146257-fête.mp3" type="audio/mpeg"></audio> |
 | ë | tréma | تلفظ تغییر نمیکنه | Noël | نُعِلْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704925261P584558-noël.mp3" type="audio/mpeg"></audio> |
-| ï | tréma | تلفظ تغییر نمیکنه | maïs | ایْر | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704925267P610558-maïs.mp3" type="audio/mpeg"></audio> |
+| ï | tréma | تلفظ تغییر نمیکنه | maïs | مَعیسْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704925267P610558-maïs.mp3" type="audio/mpeg"></audio> |
 | à | اَ | accent grave | pâte | پَتْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704925272P926987-pâte.mp3" type="audio/mpeg"></audio> |
 | ù | او - مثل u | accent grave | où | او | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704925278P812372-où.mp3" type="audio/mpeg"></audio> |
 
