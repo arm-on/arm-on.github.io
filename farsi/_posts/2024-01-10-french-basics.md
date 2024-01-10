@@ -49,3 +49,32 @@ tags:
 - استفاده از je m'appelle رسمی تره.
 - از c'est زمانی استفاده میشه که میخوایم کسی رو معرفی کنیم. مثلا تو کنفرانس میخوایم بگیم این حسامه. میگیم c'est Hesam.
 - از je suis برای موقعیت‌های غیر رسمی استفاده می‌کنیم.
+
+## خداحافظی‌کردن - رسمی
+
+|--|--|--|--|--|
+| کلمه/عبارت | ترجمه | نقش | جنسیت | تلفظ |
+|--|--|--|--|--|
+| prendre | گرفتن | فعل |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918071P786127-prendre.mp3" type="audio/mpeg"></audio> |
+| congé | ترک کردن | اسم | مذکر | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918075P408996-congé.mp3" type="audio/mpeg"></audio> |
+| prendre congé | مرخصی |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918078P409546-prendrecongé.mp3" type="audio/mpeg"></audio> |
+| formel | رسمی | صفت |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918080P149461-formel.mp3" type="audio/mpeg"></audio> |
+| au revoir | خداحافظ |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918083P938547-aurevoir.mp3" type="audio/mpeg"></audio> |
+| bonne journée | روز خوبی داشته باشید |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918085P6026292-bonnejournée.mp3" type="audio/mpeg"></audio> |
+| bonne soirée | عصر خوبی داشته باشید |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918087P410036-bonnesoirée.mp3" type="audio/mpeg"></audio> |
+| bon week-end | آخر هفته خوبی داشته باشی |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918090P987842-bonweekend.mp3" type="audio/mpeg"></audio> |
+| bonne nuit | شب بخیر |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918092P877723-bonnenuit.mp3" type="audio/mpeg"></audio> |
+| À tout à l'heure | بعدا میبینمت |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918094P386024-àtoutàlheure.mp3" type="audio/mpeg"></audio> |
+| À plus tard | به امید دیدار |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918096P400544-àplustard.mp3" type="audio/mpeg"></audio> |
+| À tout de suite | به زودی میبینمت |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918098P4671192-àtoutdesuite.mp3" type="audio/mpeg"></audio> |
+| À cet aprés-midi | امروز بعدازظهر می بینمت |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918100P4270248-àcetaprésmidi.mp3" type="audio/mpeg"></audio> |
+| À ce soir | امشب میبینمت |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918102P181229-àcesoir.mp3" type="audio/mpeg"></audio> |
+| À un de ces jours | بعدا می بینمت |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918103P975838-àundecesjours.mp3" type="audio/mpeg"></audio> |
+| À demain | فردا می بینمت |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918105P900434-àdemain.mp3" type="audio/mpeg"></audio> |
+| À lundi | دوشنبه می بینمت |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918107P6155488-àlundi.mp3" type="audio/mpeg"></audio> |
+| À ce week-end | آخر این هفته می بینمت |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918109P201548-àceweekend.mp3" type="audio/mpeg"></audio> |
+| À la semaine prochaine | هفته آینده می بینمت |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918111P870201-àlasemaineprochaine.mp3" type="audio/mpeg"></audio> |
+| À l'année prochaine | سال بعد می بینمت |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918115P071174-àlannéeprochaine.mp3" type="audio/mpeg"></audio> |
+
+## خداحافظی‌کردن - غیر رسمی
+
