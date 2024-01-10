@@ -69,6 +69,7 @@ tags:
 | bonne soirée | عصر خوبی داشته باشید |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918087P410036-bonnesoirée.mp3" type="audio/mpeg"></audio> |
 | bon week-end | آخر هفته خوبی داشته باشی |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918090P987842-bonweekend.mp3" type="audio/mpeg"></audio> |
 | bonne nuit | شب بخیر |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918092P877723-bonnenuit.mp3" type="audio/mpeg"></audio> |
+| bon matin. | صبح بخیر. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919960P848966-bonmatin.mp3" type="audio/mpeg"></audio> |
 | À tout à l'heure | بعدا میبینمت |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918094P386024-àtoutàlheure.mp3" type="audio/mpeg"></audio> |
 | À plus tard | به امید دیدار |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918096P400544-àplustard.mp3" type="audio/mpeg"></audio> |
 | À tout de suite | به زودی میبینمت |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918098P4671192-àtoutdesuite.mp3" type="audio/mpeg"></audio> |
