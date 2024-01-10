@@ -112,3 +112,17 @@ tags:
 | z | prouvez | پْخو وِ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704924501P7288709-prouvez.mp3" type="audio/mpeg"></audio> |
 | r | manger | مُنْژِ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704924508P052171-manger.mp3" type="audio/mpeg"></audio> |
 | p | coup | کو | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704924574P624737-coup.mp3" type="audio/mpeg"></audio> |
+
+## قانون liaison
+
+فرض کنید دو تا کلمه داریم که اولی به حرف بی‌صدا ختم میشه و دومی با حرف صدادار شروع میشه. این‌ها رو با هم ادغام می‌کنیم. مثال:
+
+Je suis étudiant
+
+می‌خونیم «ژو سویی زِتودیُنْ». در واقع s و é ادغام شدند.
+
+نکته: درباره liaison باید توجه کنیم که دو جور h داریم. 
+
+- h asiprer: بعد از h حرف بی‌صدا میاد. اجازه liaison نمیده. مثال: Les héros لِ اِقُ. 
+- h muet: بعد از h حرف صدادار میاد. اجازه liaison میده. مثال: Les hôtel لِ زُتِلْ.
+
