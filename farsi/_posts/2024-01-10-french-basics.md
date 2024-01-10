@@ -78,3 +78,11 @@ tags:
 
 ## خداحافظی‌کردن - غیر رسمی
 
+|--|--|--|--|--|
+| کلمه/عبارت | ترجمه | نقش | جنسیت | تلفظ |
+|--|--|--|--|--|
+| tchao | هرج و مرج | حرف ندا |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918290P849055-tchao.mp3" type="audio/mpeg"></audio> |
+| à toute | بعدا میبینمت |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918295P249726-àtoute.mp3" type="audio/mpeg"></audio> |
+| à plus | به امید دیدار |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918296P83196-àplus.mp3" type="audio/mpeg"></audio> |
+| à un de ces quatre | می بینمت |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918298P315115-àundecesquatre.mp3" type="audio/mpeg"></audio> |
+
