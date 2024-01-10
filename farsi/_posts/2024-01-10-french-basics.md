@@ -151,7 +151,7 @@ Voilà mon ami Clara.
 | کلمه/عبارت | ترجمه | نقش | جنسیت | تلفظ |
 |--|--|--|--|--|
 | quel temps fait-il ? | چه هوایی است |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704928919P385996-queltempsfaitil.mp3" type="audio/mpeg"></audio> |
-| temps | زمان | اسم | مذکر | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704928922P8514931-temps.mp3" type="audio/mpeg"></audio> |
+| temps | آب و هوا، زمان | اسم | مذکر | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704928922P8514931-temps.mp3" type="audio/mpeg"></audio> |
 | il fait beau | هوا خوب است |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704928928P8182888-ilfaitbeau.mp3" type="audio/mpeg"></audio> |
 | il fait soleil | آفتابی |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704928931P9151402-ilfaitsoleil.mp3" type="audio/mpeg"></audio> |
 | il fait froid | سرده |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704928935P042153-ilfaitfroid.mp3" type="audio/mpeg"></audio> |
