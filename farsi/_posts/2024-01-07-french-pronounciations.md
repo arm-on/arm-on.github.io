@@ -126,3 +126,15 @@ Je suis étudiant
 - h asiprer: بعد از h حرف بی‌صدا میاد. اجازه liaison نمیده. مثال: Les héros لِ اِقُ. 
 - h muet: بعد از h حرف صدادار میاد. اجازه liaison میده. مثال: Les hôtel لِ زُتِلْ.
 
+## حروف تو دماغی - Les nasals
+
+|--|--|--|--|--|
+| الگو | تلفظ | مثال | تلفظ مثال | بشنوید |
+|--|--|--|--|--|
+| aim / ain / un / um | اَنْ | lundi | لَنْدی | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704926227P0080209-lundi.mp3" type="audio/mpeg"></audio> |
+| am / an | آنْ | ambulance | آمْبولانْسْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704926232P853484-ambulance.mp3" type="audio/mpeg"></audio> |
+| om / on | اُنْ | maison | مِزُنْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704926237P8913732-maison.mp3" type="audio/mpeg"></audio> |
+
+- در کل مثال‌های بالا، حروف حاوی «ن» تو دماغی هستند. ولی اگر بعد از سه گروه بالا، حروف صدادار بیاد، قانون nasal بهم میخوره. مثال: liane لیَنْ.
+- بیشتر مواقع em en صدای «اُن» میده. مثال: entre اُنْتْخْ - استثناء: vendredi وُنْدْقُدی.
+- ترکیب im in صدای «اَنْ» میده. مثال: interdit اَنْتِقْدی و impoli اَمْ پُلی.
