@@ -43,6 +43,11 @@ tags:
 | je m'appelle Arman | اسم من آرمان است |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704917432P6842282-jemappellearman.mp3" type="audio/mpeg"></audio> |
 | je suis Arman | من آرمان هستم |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704917435P6803782-jesuisarman.mp3" type="audio/mpeg"></audio> |
 | C'est Arman | آرمان است |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704917437P889426-cestarman.mp3" type="audio/mpeg"></audio> |
+| le prénom | نام کوچک |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919771P697761-leprénom.mp3" type="audio/mpeg"></audio> |
+| le nom | نام |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919775P234414-lenom.mp3" type="audio/mpeg"></audio> |
+| Quel est votre prénom ? | اسم کوچک شما چیست ؟ |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919779P671371-quelestvotreprénom.mp3" type="audio/mpeg"></audio> |
+| Épelez votre nom, s'il vous plaît. | لطفا اسم خود را بنویسید |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919783P452091-épelezvotrenomsilvousplaît.mp3" type="audio/mpeg"></audio> |
+
 
 نکات:
 
@@ -117,3 +122,4 @@ tags:
 | Rien d'important. | چیز مهمی نیست. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919284P2955039-riendimportant.mp3" type="audio/mpeg"></audio> |
 | Rien de bien. | هیچ چیز خاصی نیست. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919287P6499689-riendebien.mp3" type="audio/mpeg"></audio> |
 | Tout va bien. | همه چیز خوب است. |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704919290P136179-toutvabien.mp3" type="audio/mpeg"></audio> |
+
