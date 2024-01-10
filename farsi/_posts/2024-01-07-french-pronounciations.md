@@ -51,32 +51,33 @@ tags:
 
 ## قواعد
 
-|--|--|--|--|
-| حروف | تلفظ | مثال | تلفظ مثال |
-|--|--|--|--|
-| ai | اِ | saison | سِزُنْ - ن تو دماغی |
-| ay | اِیْ | crayon | کْخِیُنْ - ن تو دماغی |
-| au | اُ | restaurant | رِسْتُقُ |
-| c + {a - o - u - r - l} | ک | commode | کُمُدْ |
-| c + {e - i - y} | س | police | پُلیس |
-| ch | ش | chance | شانْس - ن تو دماغی |
-| eau | اُ | chapeau | شَپُ |
-| e + consonne + consonne | اِ | merci | مِغْسی |
-| ei | اِ | seize | سِزْ |
-| eil | اِی | soleil | سُلِیْ |
-| eu | اُ | bleu | بْلُ |
-| er / ez / et / est | اِ - در پایان کلمه | violet | ویُلِ |
-| g + {a - o - u} | گ | garçon | گَغْسُ |
-| g + {e - i - y} | ژ | girafe | ژیغَفْ |
-| gu | گ | guitare | گیتَقْ |
-| gn | نْیِ | allemagne | اَلْمَنْیِ |
-| ille | ای | cédille | سِدی |
-| oi | او اَ | moi | مو اَ |
-| ou / où | او | boulevard | بولْوَقْ |
-| ph | ف | photo | فُتُ |
-| qu | ک | quelle | کِلْ |
-| {c, t, p, f} + r| خ | trente | تْخُنْتْ |
-| tion | سیون | décoration | دِکُقَسیون - ن تو دماغی |
-| ssion | سیون | profession | پْخُفِسیون - ن تو دماغی |
-| ui | اویی | suite | سوییت | 
+|--|--|--|--|--|
+| حروف | تلفظ | مثال | تلفظ مثال | گوش کنید |
+|--|--|--|--|--|
+| ai | اِ | saison | سِزُنْ - ن تو دماغی | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923273P243316-saison.mp3" type="audio/mpeg"></audio> |
+| ay | اِیْ | crayon | کْخِیُنْ - ن تو دماغی | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923275P342255-crayon.mp3" type="audio/mpeg"></audio> |
+| au | اُ | restaurant | رِسْتُقُ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923277P4917529-restaurant.mp3" type="audio/mpeg"></audio> |
+| c + {a - o - u - r - l} | ک | commode | کُمُدْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923279P281478-commode.mp3" type="audio/mpeg"></audio> |
+| c + {e - i - y} | س | police | پُلیس | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923281P187268-police.mp3" type="audio/mpeg"></audio> |
+| ch | ش | chance | شانْس - ن تو دماغی | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923283P41238-chance.mp3" type="audio/mpeg"></audio> |
+| eau | اُ | chapeau | شَپُ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923285P280245-chapeau.mp3" type="audio/mpeg"></audio> |
+| e + consonne + consonne | اِ | merci | مِغْسی | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923287P099894-merci.mp3" type="audio/mpeg"></audio> |
+| ei | اِ | seize | سِزْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923288P921846-seize.mp3" type="audio/mpeg"></audio> |
+| eil | اِی | soleil | سُلِیْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923290P790375-soleil.mp3" type="audio/mpeg"></audio> |
+| eu | اُ | bleu | بْلُ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923292P95077-bleu.mp3" type="audio/mpeg"></audio> |
+| er / ez / et / est | اِ - در پایان کلمه | violet | ویُلِ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923294P8635268-violet.mp3" type="audio/mpeg"></audio> |
+| g + {a - o - u} | گ | garçon | گَغْسُ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923296P9356852-garçon.mp3" type="audio/mpeg"></audio> |
+| g + {e - i - y} | ژ | girafe | ژیغَفْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923299P058344-girafe.mp3" type="audio/mpeg"></audio> |
+| gu | گ | guitare | گیتَقْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923301P0993128-guitare.mp3" type="audio/mpeg"></audio> |
+| gn | نْیِ | allemagne | اَلْمَنْیِ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923303P2654028-allemagne.mp3" type="audio/mpeg"></audio> |
+| ille | ای | cédille | سِدی | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923305P030487-cédille.mp3" type="audio/mpeg"></audio> |
+| oi | او اَ | moi | مو اَ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923307P353299-moi.mp3" type="audio/mpeg"></audio> |
+| ou / où | او | boulevard | بولْوَقْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923309P306543-boulevard.mp3" type="audio/mpeg"></audio> |
+| ph | ف | photo | فُتُ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923311P1481862-photo.mp3" type="audio/mpeg"></audio> |
+| qu | ک | quelle | کِلْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923313P1029792-quelle.mp3" type="audio/mpeg"></audio> |
+| {c, t, p, f} + r| خ | trente | تْخُنْتْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923318P850275-trente.mp3" type="audio/mpeg"></audio> |
+| tion | سیون | décoration | دِکُقَسیون - ن تو دماغی | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923320P798683-décoration.mp3" type="audio/mpeg"></audio> |
+| ssion | سیون | profession | پْخُفِسیون - ن تو دماغی | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923322P695134-profession.mp3" type="audio/mpeg"></audio> |
+| ui | اویی | suite | سوییت | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923324P5741282-suite.mp3" type="audio/mpeg"></audio> |
+
 
