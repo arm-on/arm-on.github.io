@@ -81,8 +81,19 @@ tags:
 |--|--|--|--|--|
 | کلمه/عبارت | ترجمه | نقش | جنسیت | تلفظ |
 |--|--|--|--|--|
-| tchao | هرج و مرج | حرف ندا |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918290P849055-tchao.mp3" type="audio/mpeg"></audio> |
+| tchao | خداحافظ | حرف ندا |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918290P849055-tchao.mp3" type="audio/mpeg"></audio> |
 | à toute | بعدا میبینمت |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918295P249726-àtoute.mp3" type="audio/mpeg"></audio> |
 | à plus | به امید دیدار |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918296P83196-àplus.mp3" type="audio/mpeg"></audio> |
 | à un de ces quatre | می بینمت |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918298P315115-àundecesquatre.mp3" type="audio/mpeg"></audio> |
 
+## حال طرف مقابل را پرسیدن
+
+|--|--|--|--|--|
+| کلمه/عبارت | ترجمه | نقش | جنسیت | تلفظ |
+|--|--|--|--|--|
+| comment allez-vous ? | چطور هستید ؟ |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918485P143199-commentallezvous.mp3" type="audio/mpeg"></audio> |
+| comment vas-tu ? | چطور هستید ؟ |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918488P457956-commentvastu.mp3" type="audio/mpeg"></audio> |
+| comment ça va ? | چطور هستید ؟ |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918490P1921139-commentçava.mp3" type="audio/mpeg"></audio> |
+| quoi de neuf ? | چه خبر ؟ |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918492P141611-quoideneuf.mp3" type="audio/mpeg"></audio> |
+| ça roule ? | خوبی ؟ |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918493P850392-çaroule.mp3" type="audio/mpeg"></audio> |
+| ça gaze ? | چطوری ؟ |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918495P870634-çagaze.mp3" type="audio/mpeg"></audio> |
