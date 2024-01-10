@@ -80,4 +80,16 @@ tags:
 | ssion | سیون | profession | پْخُفِسیون - ن تو دماغی | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923322P695134-profession.mp3" type="audio/mpeg"></audio> |
 | ui | اویی | suite | سوییت | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923324P5741282-suite.mp3" type="audio/mpeg"></audio> |
 
+## حروف آخر کلمه که تلفظ نمی‌شوند
 
+|--|--|--|--|
+| حرف | مثال | تلفظ مثال | بشنوید |
+|--|--|--|--|
+| e | bombe | بُمْبْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704924292P559955-bombe.mp3" type="audio/mpeg"></audio> |
+| d | boulevard | بولْوَقْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704923309P306543-boulevard.mp3" type="audio/mpeg"></audio> |
+| t | concert | کُنْسِقْ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704924297P932698-concert.mp3" type="audio/mpeg"></audio> |
+| s | français | فْخُنْسِ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704924303P738061-français.mp3" type="audio/mpeg"></audio> |
+| x | deux | دُ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704924310P58891-deux.mp3" type="audio/mpeg"></audio> |
+| z | prouvez | پْخو وِ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704924501P7288709-prouvez.mp3" type="audio/mpeg"></audio> |
+| r | manger | مُنْژِ | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704924508P052171-manger.mp3" type="audio/mpeg"></audio> |
+| p | coup | کو | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704924574P624737-coup.mp3" type="audio/mpeg"></audio> |
