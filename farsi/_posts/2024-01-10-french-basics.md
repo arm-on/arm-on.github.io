@@ -97,3 +97,6 @@ tags:
 | quoi de neuf ? | چه خبر ؟ |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918492P141611-quoideneuf.mp3" type="audio/mpeg"></audio> |
 | ça roule ? | خوبی ؟ |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918493P850392-çaroule.mp3" type="audio/mpeg"></audio> |
 | ça gaze ? | چطوری ؟ |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704918495P870634-çagaze.mp3" type="audio/mpeg"></audio> |
+
+- جواب‌دادن:
+
