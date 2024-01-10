@@ -134,3 +134,13 @@ tags:
 | Quel âge a tu? | شما چند سال دارید؟ |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704921375P2618592-quelâgeatu.mp3" type="audio/mpeg"></audio> |
 | j'ai 27 ans | من 27 سالمه |   |   | <audio controls><source src="https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1704921378P676258-jai27ans.mp3" type="audio/mpeg"></audio> |
 
+## کاربرد voici و voilà
+
+از این‌ها برای معرفی استفاده میشه. مثلا فرض کن من میخوام دوستم رو به نفر جدید معرفی کنم.
+
+Voici mon ami Clara.
+این دوستم کلارا هست. کنارم وایساده
+
+Voilà mon ami Clara.
+اون دوستم کلارا است. یکم دورتر وایساده.
+
