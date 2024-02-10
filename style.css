@@ -34,8 +34,11 @@ h3{
 	padding-bottom:10px;
 }
 a {
-	color:blue;
+	color:rgb(255, 145, 0);
 	text-decoration: none;
+}
+a:hover{
+	color:rgb(255, 201, 101);
 }
 #mdcontent{
 	opacity: 0;
