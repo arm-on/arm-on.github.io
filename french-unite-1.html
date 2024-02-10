@@ -228,7 +228,7 @@
   new_content = ''
   for (const [index, line] of lines.entries()) {
     if (line_types[index] == 'h1'){
-      new_content += '<p>' + lines[index] + '</p>';
+      new_content += '<h1>' + lines[index] + '</h1>';
     } else if (line_types[index] == 'h2') {
 
     } else if (line_types[index] == 'h3') {
