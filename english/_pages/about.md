@@ -17,7 +17,7 @@ share:
   linkedin: false
 ---
 
-Hello. My name is Mahdi and I'm the lone developer of Kianic.
+<!-- Hello. My name is Mahdi and I'm the lone developer of Kianic.
 
 ## Website
 For a long time, I was proponent of
@@ -50,4 +50,4 @@ from any major key-server such as `pgp.mit.edu`
 <a class= "kianic-icon" href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fab fa-2x fa-twitter kianic-icon-twitter" aria-hidden="true"></i></a>
 <a class= "kianic-icon" href="https://telegram.me/{{ site.telegram }}" target="_blank"><i class="fab fa-2x fa-telegram kianic-icon-telegram" aria-hidden="true"></i></a>
 <a class= "kianic-icon" href="https://keybase.io/{{ site.keybase }}" target="_blank"><i class="fab fa-2x fa-keybase kianic-icon-twitter" aria-hidden="true"></i></a>
-<a class= "kianic-icon" href="mailto:{{ site.email }}" target="_blank"><i class="far fa-2x fa-envelope kianic-icon-envelope" aria-hidden="true"></i></a>
+<a class= "kianic-icon" href="mailto:{{ site.email }}" target="_blank"><i class="far fa-2x fa-envelope kianic-icon-envelope" aria-hidden="true"></i></a> -->

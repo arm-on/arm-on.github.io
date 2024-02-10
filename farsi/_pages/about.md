@@ -17,7 +17,7 @@ share:
   linkedin: false
 ---
 
-سلام. من مهدی هستم توسعه دهنده پوسته کیانیک و خوشحالم از اینکه این پوسته رو برای استفاده انتخاب کردید.
+<!-- سلام. من مهدی هستم توسعه دهنده پوسته کیانیک و خوشحالم از اینکه این پوسته رو برای استفاده انتخاب کردید.
 
 ## تارنما
 برای مدتی طولانی من وابسته به [**وردپرس <i class="fab fa-wordpress-simple kianic-icon-wordpress" aria-hidden="true"></i>**](https://wordpress.org "وردپرس"){:target="_blank"} بودم، ولی الان با ابزار های تولید تارنمای ثابت کار می‌کنم و چندتا از اون‌ها رو امتحان کردم.
@@ -39,4 +39,4 @@ share:
 <a class= "kianic-icon" href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fab fa-2x fa-twitter kianic-icon-twitter" aria-hidden="true"></i></a>
 <a class= "kianic-icon" href="https://telegram.me/{{ site.telegram }}" target="_blank"><i class="fab fa-2x fa-telegram kianic-icon-telegram" aria-hidden="true"></i></a>
 <a class= "kianic-icon" href="https://keybase.io/{{ site.keybase }}" target="_blank"><i class="fab fa-2x fa-keybase kianic-icon-twitter" aria-hidden="true"></i></a>
-<a class= "kianic-icon" href="mailto:{{ site.email }}" target="_blank"><i class="far fa-2x fa-envelope kianic-icon-envelope" aria-hidden="true"></i></a>
+<a class= "kianic-icon" href="mailto:{{ site.email }}" target="_blank"><i class="far fa-2x fa-envelope kianic-icon-envelope" aria-hidden="true"></i></a> -->
