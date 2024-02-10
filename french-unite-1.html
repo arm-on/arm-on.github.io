@@ -207,7 +207,7 @@
   lines = content.split('\n');
   line_types = [];
   new_content = '';
-  for (const [index, line] of lines.entries()) {
+  for (line in lines) {
     if (line.startsWith('# ')) {
       line_types.push('h1');
     } else if (line.startsWith('## ')) {
@@ -224,7 +224,26 @@
       line_types.push('nochange');
     }
   }
-  console.log(line_types);
+  
+  new_content = ''
+  for (const [index, line] of lines.entries()) {
+    if (line_types[index] == 'h1'){
+
+    } else if (line_types[index] == 'h2') {
+
+    } else if (line_types[index] == 'h3') {
+
+    } else if (line_types[index] == 'row') {
+
+    } else if (line_types[index] == 'border') {
+
+    } else if (line_types[index] == 'bullet') {
+
+    } else if (line_types[index] == 'nochange') {
+      new_content += '<p>' + lines[index] + '</p>';
+    }
+  }
+  document.getElementById('content').innerHTML = new_content;
 </script>
 </body>
 </html>
