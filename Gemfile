@@ -9,3 +9,5 @@ gem 'jekyll-gist'
 # some kind of temporary fix for jekyll not running in Ruby 3.0
 gem "webrick", "~> 1.7"
 gem "gemoji"
+gem 'jekyll-redirect-from'
+gem 'github-pages', group: :jekyll_plugins
