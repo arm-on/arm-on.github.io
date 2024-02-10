@@ -3,8 +3,17 @@ body {
 	font-family: IRANSansX  !important;
 	direction: rtl;
 }
-.navbar{
+#navbar-top{
 	margin-bottom:50px;
+}
+#navbar-bottom{
+	margin-bottom:0px;
+	margin-top:70px;
+	padding:0;
+	direction:ltr;
+}
+#navbar-bottom > div > a {
+	font-size:small !important;
 }
 .heading{
 	font-weight:normal !important;
