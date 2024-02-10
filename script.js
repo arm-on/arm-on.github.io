@@ -115,4 +115,4 @@ if (line_types[index] == 'row'){
 }
 }
 document.getElementById('content').innerHTML = new_content;
-document.getElementById('content').style.display = block;
+document.getElementById('content').style.display = 'block';
