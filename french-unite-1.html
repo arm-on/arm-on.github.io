@@ -203,6 +203,7 @@
 
 </div>
 <script>
+  var turndownService = new TurndownService()
   var markdown = turndownService.turndown(document.getElementById('content').innerHTML);
   document.getElementById('content').innerHTML = markdown;
 </script>
