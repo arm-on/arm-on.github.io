@@ -2,6 +2,7 @@
 body {
 	font-family: IRANSansX  !important;
 	direction: rtl;
+	overflow:hidden;
 }
 #navbar-top{
 	margin-bottom:50px;
