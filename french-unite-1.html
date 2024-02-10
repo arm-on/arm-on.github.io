@@ -203,8 +203,26 @@
 
 </div>
 <script>
-  var turndownService = new TurndownService()
-  var markdown = turndownService.turndown(document.getElementById('content'));
+  content = document.getElementById('content').innerHTML;
+  lines = content.split('\n');
+  line_types = [];
+  new_content = '';
+  for (const [index, line] of lines.entries()) {
+    if (line.startsWith('# ')) {
+      line_types.push('h1');
+    } else if (line.startsWith('## ')) {
+      line_types.push('h2');
+    } else if (line.startsWith('### ')) {
+      line_types.push('h3');
+    } else if (line.startsWith('| ')) {
+      line_types.push('row');
+    } else if (line.startsWith('|--')) {
+      line_types.push('border');
+    } else if (line.startsWith('- ')) {
+      line_types.push('bullet');
+    }
+  }
+  console.log(line_types);
 </script>
 </body>
 </html>
