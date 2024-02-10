@@ -2,10 +2,9 @@
 body {
 	font-family: IRANSansX  !important;
 	direction: rtl;
-	margin: 0;
 }
-h1{
-	margin-top: 50px;
+.heading{
+	font-weight:normal !important;
 }
 .title{
     padding-top: 10px;
@@ -21,4 +20,8 @@ h2{
 h3{
 	padding-top:10px;
 	padding-bottom:10px;
+}
+a {
+	color:blue;
+	text-decoration: none;
 }
