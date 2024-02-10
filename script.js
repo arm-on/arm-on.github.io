@@ -50,11 +50,11 @@ if (line_type == 'row' && line_types[index-1]=='border-begin' && line_types[inde
 new_content = ''
 for (const [index, line] of lines.entries()) {
 if (line_types[index] == 'h1'){
-    new_content += '<h1 class="heading">' + lines[index].replace('#','') + '</h1>';
+    new_content += '<h1 class="heading" id="h1' + index + '">' + lines[index].replace('#','') + '</h1>';
 } else if (line_types[index] == 'h2'){
-    new_content += '<h2 class="heading">' + lines[index].replace('##', '') + '</h2>';
+    new_content += '<h2 class="heading" id="h2' + index + '">' + lines[index].replace('##', '') + '</h2>';
 } else if (line_types[index] == 'h3'){
-    new_content += '<h3 class="heading">' + lines[index].replace('###', '') + '</h3>';
+    new_content += '<h3 class="heading" id="h3' + index + '">' + lines[index].replace('###', '') + '</h3>';
 } else if (line_types[index] == 'bullet'){
     new_content += '<li>' + lines[index].replace('-', '') + '</li>';
 } else if (line_types[index] == 'nochange'){
@@ -119,3 +119,15 @@ child = document.createElement('div');
 child.id = 'content';
 child.innerHTML = new_content;
 container.appendChild(child);
+
+table_of_contents = document.createElement('div');
+table_of_contents.class = 'list-group';
+headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+for (const [index, heading] of headings.entries()){
+    link = document.createElement('a');
+    link.href = '#' + heading.id;
+    link.innerHTML = heading.innerHTML;
+    link.class = 'list-group-item';
+    table_of_contents.appendChild(link);
+}
+container.insertBefore(table_of_contents, container.firstChild);
