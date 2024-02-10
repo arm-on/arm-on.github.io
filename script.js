@@ -131,3 +131,7 @@ for (const [index, heading] of headings.entries()){
     table_of_contents.appendChild(link);
 }
 container.insertBefore(table_of_contents, container.firstChild);
+toc_title = document.createElement('h1');
+toc_title.className = 'heading';
+toc_title.innerHTML = 'سرفصل مطالب';
+container.insertBefore(toc_title, table_of_contents);
