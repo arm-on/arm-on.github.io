@@ -56,6 +56,8 @@ if (line_types[index] == 'h1'){
     new_content += '<h3>' + lines[index].replace('###', '') + '</h3>';
 } else if (line_types[index] == 'bullet'){
     new_content += '<li>' + lines[index].replace('-', '') + '</li>';
+} else if (line_types[index] == 'nochange'){
+    new_content += '<p>' + lines[index] + '</p>';
 }
 
 if (line_types[index] == 'header'){
