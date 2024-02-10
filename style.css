@@ -3,6 +3,9 @@ body {
 	font-family: IRANSansX  !important;
 	direction: rtl;
 }
+.navbar{
+	margin-bottom:50px;
+}
 .heading{
 	font-weight:normal !important;
 }
