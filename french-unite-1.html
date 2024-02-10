@@ -204,7 +204,7 @@
 </div>
 <script>
   var turndownService = new TurndownService()
-  var markdown = turndownService.turndown(document.getElementById('content').innerHTML);
+  var markdown = turndownService.turndown(document.getElementById('content'));
   document.getElementById('content').innerHTML = markdown;
 </script>
 </body>
