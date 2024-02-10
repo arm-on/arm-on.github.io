@@ -220,6 +220,8 @@
       line_types.push('border');
     } else if (line.startsWith('- ')) {
       line_types.push('bullet');
+    } else {
+      line_types.push('nochange');
     }
   }
   console.log(line_types);
