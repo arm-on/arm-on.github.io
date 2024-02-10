@@ -1,9 +1,8 @@
-
 var Persian = /[آ-ی]/;
 
-content = document.getElementById('content').innerHTML.valueOf();
-container = document.getElementById('content').parentNode;
-document.getElementById('content').style.display = 'none';
+content = document.getElementById('mdcontent').innerHTML.valueOf();
+container = document.getElementById('mdcontent').parentNode;
+document.getElementById('mdcontent').style.display = 'none';
 lines = content.split('\n');
 line_types = [];
 new_content = '';
@@ -120,4 +119,3 @@ child = document.createElement('div');
 child.id = 'content';
 child.innerHTML = new_content;
 container.appendChild(child);
-// document.getElementById('content').innerHTML = new_content;
