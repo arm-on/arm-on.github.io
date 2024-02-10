@@ -1,7 +1,9 @@
 
 var Persian = /[آ-ی]/;
 
-content = document.getElementById('content').innerHTML;
+content = document.getElementById('content').innerHTML.valueOf();
+container = document.getElementById('content').parentNode;
+document.getElementById('content').style.display = 'none';
 lines = content.split('\n');
 line_types = [];
 new_content = '';
@@ -114,4 +116,8 @@ if (line_types[index] == 'row'){
     }
 }
 }
-document.getElementById('content').innerHTML = new_content;
+child = document.createElement('div');
+child.id = 'content';
+child.innerHTML = new_content;
+container.appendChild(child);
+// document.getElementById('content').innerHTML = new_content;
