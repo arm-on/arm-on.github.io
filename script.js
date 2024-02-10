@@ -59,7 +59,7 @@ if (line_types[index] == 'h1'){
 }
 
 if (line_types[index] == 'header'){
-    new_content += '<table class="table table-striped"><tr>';
+    new_content += '<div class="table-responsive"><table class="table table-striped"><tr>';
     cols = lines[index].split('|');
     cols.shift();
     cols.pop();
@@ -92,7 +92,7 @@ if (line_types[index] == 'last-row'){
         new_content += '<td style="direction:rtl">' + col.replace('!','').replace('.','') + '</td>';
     }
     }
-    new_content += '</tr></table>';
+    new_content += '</tr></div></table>';
 }
 if (line_types[index] == 'row'){
     cols = lines[index].split('|');
