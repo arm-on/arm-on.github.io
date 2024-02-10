@@ -121,13 +121,13 @@ child.innerHTML = new_content;
 container.appendChild(child);
 
 table_of_contents = document.createElement('div');
-table_of_contents.class = 'list-group';
+table_of_contents.className = 'list-group';
 headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
 for (const [index, heading] of headings.entries()){
     link = document.createElement('a');
     link.href = '#' + heading.id;
     link.innerHTML = heading.innerHTML;
-    link.class = 'list-group-item';
+    link.className = 'list-group-item';
     table_of_contents.appendChild(link);
 }
 container.insertBefore(table_of_contents, container.firstChild);
