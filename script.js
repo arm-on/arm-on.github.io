@@ -131,7 +131,7 @@ for (const [index, heading] of headings.entries()){
     } else if (heading.id.startsWith('h2')){
         link.innerHTML = '• ';
     } else if (heading.id.startsWith('h3')){
-        link.innerHTML = '•• ';
+        link.innerHTML = '* ';
     }
     link.innerHTML += heading.innerHTML;
     link.className = 'list-group-item';
