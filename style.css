@@ -43,3 +43,9 @@ a:hover{
 #mdcontent{
 	opacity: 0;
 }
+h2 .heading{
+	margin-right:20px;
+}
+h3 .heading{
+	margin-right:30px;
+}
