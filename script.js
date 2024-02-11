@@ -138,9 +138,9 @@ container.insertBefore(toc_title, table_of_contents);
 
 list_group_items = document.getElementsByClassName('list-group-item');
 for (const [index, item] of list_group_items.entries()){
-    if (item.href.split('#')[1].startsWith('#h2')){
+    if (item.href.split('#')[1].startsWith('h2')){
         list_group_items[index].style = 'padding-right:20px';
-    } else if(item.href.split('#')[1].startsWith('#h3')){
+    } else if(item.href.split('#')[1].startsWith('h3')){
         list_group_items[index].style = 'padding-right:30px';
     }
 }
