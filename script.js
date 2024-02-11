@@ -143,7 +143,7 @@ Array.from(list_group_items).forEach((item) => {
     list_group_urls.push(item.href);
 });
 
-Array.from(list_group_urls).forEach((item) => {
+for (const [index, item] of list_group_urls.entries()){
     if (item.split('#')[1].startsWith('h2')){
         list_group_items[index].style = 'padding-right:20px';
     } else if(item.split('#')[1].startsWith('h3')){
