@@ -149,4 +149,4 @@ for (const [index, item] of list_group_urls.entries()){
     } else if(item.split('#')[1].startsWith('h3')){
         list_group_items[index].style = 'padding-right:30px';
     }
-});
+}
