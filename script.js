@@ -126,7 +126,14 @@ headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
 for (const [index, heading] of headings.entries()){
     link = document.createElement('a');
     link.href = '#' + heading.id;
-    link.innerHTML = heading.innerHTML;
+    if (heading.id.startsWith('h1')){
+        link.innerHTML = '+ ';
+    } else if (heading.id.startsWith('h2')){
+        link.innerHTML = '• ';
+    } else if (heading.id.startsWith('h3')){
+        link.innerHTML = '•• ';
+    }
+    link.innerHTML += heading.innerHTML;
     link.className = 'list-group-item';
     table_of_contents.appendChild(link);
 }
