@@ -135,3 +135,12 @@ toc_title = document.createElement('h1');
 toc_title.className = 'heading';
 toc_title.innerHTML = 'سرفصل مطالب';
 container.insertBefore(toc_title, table_of_contents);
+
+list_group_items = document.getElementsByClassName('list-group-item');
+for (const [index, item] of list_group_items.entries()){
+    if (item.href.startsWith('#h2')){
+        list_group_items[index].style = 'padding-right:20px';
+    } else if(item.href.startsWith('#h3')){
+        list_group_items[index].style = 'padding-right:30px';
+    }
+}
