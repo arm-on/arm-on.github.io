@@ -97,7 +97,7 @@ if (line_types[index] == 'last-row'){
     }
     new_content += '</tr></div></table>';
 }
-if (line_types[index] == 'row'){
+if (line_types[index] == 'row' || line_types[index] == 'first-row'){
     cols = lines[index].split('|');
     cols.shift();
     cols.pop();
