@@ -61,7 +61,11 @@ if (line_types[index] == 'h1'){
 } else if (line_types[index] == 'bullet'){
     new_content += '<li>' + lines[index].replace('-', '') + '</li>';
 } else if (line_types[index] == 'nochange'){
-    new_content += '<p>' + lines[index] + '</p>';
+    if (isPersian(lines[index][0])){
+        new_content += '<p style="direction:rtl">' + lines[index] + '</p>';    
+    } else{
+        new_content += '<p style="direction:ltr">' + lines[index] + '</p>';
+    }
 }
 
 if (line_types[index] == 'header'){
