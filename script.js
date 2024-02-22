@@ -1,6 +1,6 @@
 const PERSIAN = new Set("اآبپتثجچحخدذرزژسشصضطظعغفقکگلمنوهی۱۲۳۴۵۶۷۸۹۰");
 function isPersian(char) {
-    return CHARS.has(char);
+    return PERSIAN.has(char);
 }
 
 content = document.getElementById('mdcontent').innerHTML.valueOf();
