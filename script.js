@@ -1,4 +1,7 @@
-var Persian = /[آ-ی]/;
+const PERSIAN = new Set("اآبپتثجچحخدذرزژسشصضطظعغفقکگلمنوهی۱۲۳۴۵۶۷۸۹۰");
+function isPersian(char) {
+    return CHARS.has(char);
+}
 
 content = document.getElementById('mdcontent').innerHTML.valueOf();
 container = document.getElementById('mdcontent').parentNode;
@@ -67,15 +70,12 @@ if (line_types[index] == 'header'){
     cols.shift();
     cols.pop();
     for (const [index, col] of cols.entries()) {
-    persian = false;
-    if(Persian.test(col[0])){
-        persian = true;
-    }
-    if (persian == false){
-        new_content += '<th style="direction:ltr !important; text-align:right !important">' + col.replace('!','') + '</th>';
-    }else{
-        new_content += '<th style="direction:rtl">' + col.replace('!','').replace('.','') + '</th>';
-    }
+        persian = isPersian(col[0]);
+        if (persian == false){
+            new_content += '<th style="direction:ltr !important; text-align:right !important">' + col.replace('!','') + '</th>';
+        }else{
+            new_content += '<th style="direction:rtl">' + col.replace('!','').replace('.','') + '</th>';
+        }
     }
     new_content += '</tr>'
 }
@@ -85,15 +85,12 @@ if (line_types[index] == 'last-row'){
     cols.pop();
     new_content += '<tr>';
     for (const [index, col] of cols.entries()) {
-    persian = false;
-    if(Persian.test(col[0])){
-        persian = true;
-    }
-    if (persian == false){
-        new_content += '<td style="direction:ltr !important; text-align:right !important">' + col.replace('!','') + '</td>';
-    }else{
-        new_content += '<td style="direction:rtl">' + col.replace('!','').replace('.','') + '</td>';
-    }
+        persian = isPersian(col[0]);
+        if (persian == false){
+            new_content += '<td style="direction:ltr !important; text-align:right !important">' + col.replace('!','') + '</td>';
+        }else{
+            new_content += '<td style="direction:rtl">' + col.replace('!','').replace('.','') + '</td>';
+        }
     }
     new_content += '</tr></div></table>';
 }
@@ -103,14 +100,11 @@ if (line_types[index] == 'row' || line_types[index] == 'first-row'){
     cols.pop();
     new_content += '<tr>';
     for (const [index, col] of cols.entries()) {
-        persian = false;
-        if(Persian.test(col[0])){
-        persian = true;
-        }
+        persian = isPersian(col[0]);
         if (persian == false){
-        new_content += '<td style="direction:ltr !important; text-align:right !important">' + col.replace('!','') + '</td>';
+            new_content += '<td style="direction:ltr !important; text-align:right !important">' + col.replace('!','') + '</td>';
         }else{
-        new_content += '<td style="direction:rtl">' + col.replace('!','').replace('.','') + '</td>';
+            new_content += '<td style="direction:rtl">' + col.replace('!','').replace('.','') + '</td>';
         }
     }
 }
