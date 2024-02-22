@@ -74,7 +74,7 @@ if (line_types[index] == 'header'){
     cols.shift();
     cols.pop();
     for (const [index, col] of cols.entries()) {
-        persian = isPersian(col[0]);
+        persian = isPersian(col.trim()[0]);
         if (persian == false){
             new_content += '<th style="direction:ltr !important; text-align:right !important">' + col.replace('!','') + '</th>';
         }else{
@@ -89,7 +89,7 @@ if (line_types[index] == 'last-row'){
     cols.pop();
     new_content += '<tr>';
     for (const [index, col] of cols.entries()) {
-        persian = isPersian(col[0]);
+        persian = isPersian(col.trim()[0]);
         if (persian == false){
             new_content += '<td style="direction:ltr !important; text-align:right !important">' + col.replace('!','') + '</td>';
         }else{
@@ -104,7 +104,7 @@ if (line_types[index] == 'row' || line_types[index] == 'first-row'){
     cols.pop();
     new_content += '<tr>';
     for (const [index, col] of cols.entries()) {
-        persian = isPersian(col[0]);
+        persian = isPersian(col.trim()[0]);
         if (persian == false){
             new_content += '<td style="direction:ltr !important; text-align:right !important">' + col.replace('!','') + '</td>';
         }else{
