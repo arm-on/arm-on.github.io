@@ -5,9 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
       const container = document.createElement('div');
       container.classList.add('col-md-12');
 
-      // Split the conversation text by line
       const lines = conversation.textContent.trim().split('\n');
-      let currentLineIndex = 0; // Track the current line index
+      let currentLineIndex = 0;
 
       function showNextLine() {
         if (currentLineIndex < lines.length) {
@@ -42,24 +41,21 @@ document.addEventListener("DOMContentLoaded", function() {
           bubbleContainer.appendChild(bubble);
           container.appendChild(bubbleContainer);
 
-          // Trigger fade-in after the element is added to the DOM
           setTimeout(() => {
             bubble.classList.add('fade-in');
           }, 100);
 
-          // Add click event to the bubble to show the next line
           bubble.addEventListener('click', function() {
             currentLineIndex++;
             showNextLine();
-            bubble.removeEventListener('click', arguments.callee); // Prevent multiple clicks on the same bubble
+            bubble.removeEventListener('click', arguments.callee);
           });
 
-          // Hide the remaining lines initially
           conversation.style.display = 'none';
         }
       }
 
-      showNextLine(); // Start by showing the first line
-      conversation.replaceWith(container); // Replace each <conversation> tag with the generated content
+      showNextLine();
+      conversation.replaceWith(container);
     });
   });

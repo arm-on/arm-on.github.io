@@ -43,21 +43,25 @@ a:hover{
 #mdcontent{
 	opacity: 0;
 }
+
+
+
 .speech-bubble {
 	position: relative;
-	background-color: #ffffff; /* White background */
+	background-color: #ffffff;
 	padding: 20px;
 	margin: 20px 0;
-	width: 100%; /* Make the bubbles take full width */
-	border: 2px solid #333333; /* Black border */
-	color: #333333; /* Black text color */
-	cursor: pointer; /* Pointer cursor to indicate clickable element */
-	opacity: 0; /* Start with transparent */
-	transition: opacity 0.5s ease; /* Smooth transition for fade effect */
+	width: 100%;
+	border: 2px solid #333333;
+	color: #333333;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+	border-radius: 8px;
   }
 
   .fade-in {
-	opacity: 1; /* Fully opaque when fade-in class is added */
+	opacity: 1;
   }
 
   .speech-bubble::after {
@@ -71,21 +75,21 @@ a:hover{
   .speech-bubble-left {
 	margin-left: 0;
 	margin-right: auto;
-	border: 2px solid #ff6600; /* Orange border for left bubbles */
+	border: 2px solid #ff6600;
   }
 
   .speech-bubble-left::after {
 	border: 20px solid transparent;
-	border-right-color: #ff6600; /* Orange color for arrow to match border */
+	border-right-color: #ff6600;
 	border-left: 0;
 	border-bottom: 0;
-	left: -20px; /* Keep the arrow aligned with the left edge */
-	top: 20px; /* Adjust for centering */
+	left: -20px;
+	top: 20px;
   }
 
   .speech-bubble-right {
-	background-color: #e0e0e0; /* Light grey background for right bubbles */
-	border: 2px solid #ff6600; /* Orange border for right bubbles */
+	background-color: #e0e0e0;
+	border: 2px solid #ff6600;
 	margin-right: 0;
 	margin-left: auto;
 	text-align: right;
@@ -93,18 +97,18 @@ a:hover{
 
   .speech-bubble-right::after {
 	border: 20px solid transparent;
-	border-left-color: #e0e0e0; /* Light grey background for arrow */
+	border-left-color: #e0e0e0;
 	border-right: 0;
 	border-top: 0;
-	right: -20px; /* Keep the arrow aligned with the right edge */
-	top: 20px; /* Adjust for centering */
+	right: -20px;
+	top: 20px;
   }
 
   .icon {
 	font-size: 24px;
 	margin-right: 10px;
 	vertical-align: middle;
-	color: #ff6600; /* Orange icon color */
+	color: #ff6600;
   }
 
   .bubble-container {
@@ -119,23 +123,22 @@ a:hover{
 
   .translation {
 	font-size: 0.9rem;
-	color: #333333; /* Black text color */
+	color: #333333;
 	margin-top: 10px;
 	font-style: italic;
   }
 
   .translation-rtl {
-	direction: rtl; /* Ensure text flows from right to left */
-	text-align: left; /* Align the Persian text to the left */
+	direction: rtl;
+	text-align: left;
   }
 
-  /* Mobile Specific Styles */
   @media only screen and (max-width: 600px) {
 	.speech-bubble {
-	  font-size: 1rem; /* Adjust font size for better visibility */
-	  padding: 15px; /* Adjust padding */
+	  font-size: 1rem;
+	  padding: 15px;
 	}
 	.icon {
-	  font-size: 20px; /* Slightly smaller icons on mobile */
+	  font-size: 20px;
 	}
   }
