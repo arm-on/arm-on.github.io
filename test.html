@@ -24,7 +24,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            position: fixed; /* Use fixed positioning to overlay pages correctly */
+            position: fixed; /* Positioning for pagination */
             top: 0;
             left: 0;
             transition: transform 0.5s ease;
@@ -65,6 +65,7 @@
             padding: 1rem;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 2rem; /* Increase font size */
         }
 
         .flashcard-front {
@@ -109,43 +110,8 @@
     </style>
 </head>
 <body>
-    <!-- Flashcards -->
-    <div class="flashcard-page" id="page1" style="transform: translateX(0);">
-        <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
-            <div class="flashcard">
-                <div class="flashcard-front">
-                    <h4>Haus</h4> <!-- German Word -->
-                </div>
-                <div class="flashcard-back">
-                    <h4>خانه</h4> <!-- Persian Translation -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="flashcard-page" id="page2" style="transform: translateX(100%);">
-        <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
-            <div class="flashcard">
-                <div class="flashcard-front">
-                    <h4>Buch</h4> <!-- German Word -->
-                </div>
-                <div class="flashcard-back">
-                    <h4>کتاب</h4> <!-- Persian Translation -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="flashcard-page" id="page3" style="transform: translateX(100%);">
-        <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
-            <div class="flashcard">
-                <div class="flashcard-front">
-                    <h4>Hund</h4> <!-- German Word -->
-                </div>
-                <div class="flashcard-back">
-                    <h4>سگ</h4> <!-- Persian Translation -->
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Flashcards will be dynamically generated here -->
+    <div id="flashcard-container"></div>
 
     <!-- Pagination Controls -->
     <div class="pagination-controls">
@@ -153,10 +119,52 @@
         <button id="nextBtn" onclick="nextPage()">Next</button>
     </div>
 
-    <!-- JavaScript for Pagination -->
+    <!-- JavaScript for Loading Data and Pagination -->
     <script>
         let currentPage = 1;
-        const totalPages = 3;
+        let totalPages = 0;
+        let flashcards = [];
+
+        // Fetch data from JSON file and initialize flashcards
+        fetch('words.json')
+            .then(response => response.json())
+            .then(data => {
+                flashcards = data;
+                totalPages = flashcards.length;
+                createFlashcards();
+                showPage(currentPage);
+            });
+
+        function createFlashcards() {
+            const container = document.getElementById('flashcard-container');
+            flashcards.forEach((word, index) => {
+                const page = document.createElement('div');
+                page.className = 'flashcard-page';
+                page.id = `page${index + 1}`;
+                page.style.transform = `translateX(${index * 100}%)`;
+
+                const flashcardContainer = document.createElement('div');
+                flashcardContainer.className = 'flashcard-container';
+                flashcardContainer.onclick = () => flashcardContainer.firstChild.classList.toggle('is-flipped');
+
+                const flashcard = document.createElement('div');
+                flashcard.className = 'flashcard';
+
+                const front = document.createElement('div');
+                front.className = 'flashcard-front';
+                front.innerHTML = `<h4>${word.german}</h4>`;
+
+                const back = document.createElement('div');
+                back.className = 'flashcard-back';
+                back.innerHTML = `<h4>${word.persian}</h4>`;
+
+                flashcard.appendChild(front);
+                flashcard.appendChild(back);
+                flashcardContainer.appendChild(flashcard);
+                page.appendChild(flashcardContainer);
+                container.appendChild(page);
+            });
+        }
 
         function showPage(page) {
             const pages = document.querySelectorAll('.flashcard-page');
