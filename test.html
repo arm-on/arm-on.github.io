@@ -10,14 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- IranSans Font via @font-face -->
     <style>
-        @font-face {
-            font-family: 'IRANSans';
-            src: url('https://cdn.jsdelivr.net/gh/rastikerdar/iransans@5.1.0/dist/fonts/ttf/IRANSansWeb.ttf') format('truetype'),
-                 url('https://cdn.jsdelivr.net/gh/rastikerdar/iransans@5.1.0/dist/fonts/woff/IRANSansWeb.woff') format('woff'),
-                 url('https://cdn.jsdelivr.net/gh/rastikerdar/iransans@5.1.0/dist/fonts/woff2/IRANSansWeb.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-        }
+        @import url(fontiran.css);
 
         body, html {
             height: 100%;
@@ -91,7 +84,7 @@
         .flashcard-back {
             background-color: #007bff; /* Blue background for the back */
             color: white;
-            font-family: 'IRANSans', sans-serif; /* Apply IranSans font */
+            font-family: 'IRANSansX', sans-serif; /* Apply IranSans font */
             transform: rotateY(180deg);
         }
 
