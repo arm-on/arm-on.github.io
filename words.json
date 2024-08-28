@@ -3,18 +3,18 @@
         "german": "Haus",
         "persian": "خانه",
         "example": "Das ist mein Haus.",
-        "audio": "https://example.com/haus.mp3"
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1724791481P953891-rad.mp3"
     },
     {
         "german": "Buch",
         "persian": "کتاب",
         "example": "Ich lese ein Buch.",
-        "audio": "https://example.com/buch.mp3"
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1724791481P953891-rad.mp3"
     },
     {
         "german": "Hund",
         "persian": "سگ",
         "example": "Der Hund bellt.",
-        "audio": "https://example.com/hund.mp3"
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1724791481P953891-rad.mp3"
     }
 ]
