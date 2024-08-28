@@ -15,12 +15,16 @@
             font-family: 'Roboto', sans-serif; /* Default font to Roboto */
         }
 
+        .carousel-container {
+            max-width: 400px; /* Ensures flashcards don't exceed a reasonable size */
+            margin: auto;
+        }
+
         .flashcard-container {
             perspective: 1000px;
             cursor: pointer;
             width: 100%;
-            max-width: 300px; /* Ensures flashcards don't exceed a reasonable size */
-            height: 200px;
+            height: 300px; /* Increased height for better display */
             margin: auto;
         }
 
@@ -68,17 +72,23 @@
             width: 5%; /* Reduce width for smaller controls */
         }
 
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #007bff; /* Set background color to match flashcards */
+            padding: 10px; /* Add padding for a larger click area */
+            border-radius: 50%; /* Make the controls circular */
+        }
+
         .carousel-item {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh; /* Makes sure each flashcard takes up the full viewport height */
         }
-
     </style>
 </head>
 <body>
-    <div class="container mt-5">
+    <div class="container mt-5 carousel-container">
         <div id="flashcardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
             <div class="carousel-inner">
                 <!-- Flashcard 1 -->
@@ -122,7 +132,7 @@
                 </div>
                 <!-- Add more flashcards as needed -->
             </div>
-            <!-- Carousel controls -->
+            <!-- Fancy Carousel controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#flashcardCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
