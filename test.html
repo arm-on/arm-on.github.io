@@ -134,13 +134,15 @@
             background-color: #cccccc;
             cursor: not-allowed;
         }
-        
+
         .card-number {
             font-size: 1rem; /* Smaller font size for the card number */
             color: #555; /* A lighter color for visibility */
             position: absolute;
             top: 10px;
-            right: 10px;
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Adjust position to be centered */
+            text-align: center; /* Center text */
         }
     </style>
 </head>
@@ -177,14 +179,14 @@
                 page.className = 'flashcard-page';
                 page.id = `page${index + 1}`;
                 page.style.transform = `translateX(${index * 100}%)`;
-        
+
                 const flashcardContainer = document.createElement('div');
                 flashcardContainer.className = 'flashcard-container';
                 flashcardContainer.onclick = () => flashcardContainer.firstChild.classList.toggle('is-flipped');
-        
+
                 const flashcard = document.createElement('div');
                 flashcard.className = 'flashcard';
-        
+
                 const front = document.createElement('div');
                 front.className = 'flashcard-front';
                 front.innerHTML = `
@@ -193,11 +195,11 @@
                     <button class="play-button" data-audio="${word.audio}" onclick="playAudio(event, this)">Play</button>
                     <p class="example">${word.example}</p>
                 `;
-        
+
                 const back = document.createElement('div');
                 back.className = 'flashcard-back';
                 back.innerHTML = `<h4>${word.persian}</h4>`;
-        
+
                 flashcard.appendChild(front);
                 flashcard.appendChild(back);
                 flashcardContainer.appendChild(flashcard);
@@ -205,7 +207,7 @@
                 container.appendChild(page);
             });
         }
-        
+
         function playAudio(event, button) {
             event.stopPropagation(); // Prevents the flashcard flip
             const audio = new Audio(button.getAttribute('data-audio'));
