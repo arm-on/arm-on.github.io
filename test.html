@@ -134,6 +134,14 @@
             background-color: #cccccc;
             cursor: not-allowed;
         }
+        
+        .card-number {
+            font-size: 1rem; /* Smaller font size for the card number */
+            color: #555; /* A lighter color for visibility */
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -180,6 +188,7 @@
                 const front = document.createElement('div');
                 front.className = 'flashcard-front';
                 front.innerHTML = `
+                    <div class="card-number">${index + 1}/${flashcards.length}</div>
                     <h4>${word.german}</h4>
                     <button class="play-button" data-audio="${word.audio}" onclick="playAudio(event, this)">Play</button>
                     <p class="example">${word.example}</p>
