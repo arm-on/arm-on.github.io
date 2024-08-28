@@ -6,11 +6,19 @@
     <title>German-Persian Flashcards</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- IranSans Font for Persian -->
-    <link href="https://cdn.rawgit.com/rastikerdar/iransans/5.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
     <!-- Roboto Font for English -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- IranSans Font via @font-face -->
     <style>
+        @font-face {
+            font-family: 'IRANSans';
+            src: url('https://cdn.jsdelivr.net/gh/rastikerdar/iransans@5.1.0/dist/fonts/ttf/IRANSansWeb.ttf') format('truetype'),
+                 url('https://cdn.jsdelivr.net/gh/rastikerdar/iransans@5.1.0/dist/fonts/woff/IRANSansWeb.woff') format('woff'),
+                 url('https://cdn.jsdelivr.net/gh/rastikerdar/iransans@5.1.0/dist/fonts/woff2/IRANSansWeb.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body, html {
             height: 100%;
             margin: 0;
