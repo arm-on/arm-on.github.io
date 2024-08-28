@@ -7,19 +7,23 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .flashcard {
+        .flashcard-container {
             perspective: 1000px;
             cursor: pointer;
+            width: 100%;
+            height: 200px;
+            margin: auto;
         }
 
-        .flashcard-inner {
+        .flashcard {
+            width: 100%;
+            height: 100%;
             transition: transform 0.6s;
             transform-style: preserve-3d;
             position: relative;
         }
 
-        .flashcard:hover .flashcard-inner,
-        .flashcard.flip .flashcard-inner {
+        .flashcard.is-flipped {
             transform: rotateY(180deg);
         }
 
@@ -53,8 +57,8 @@
         <div class="row g-4">
             <!-- Flashcard 1 -->
             <div class="col-md-4">
-                <div class="flashcard" onclick="this.classList.toggle('flip')">
-                    <div class="flashcard-inner">
+                <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
+                    <div class="flashcard">
                         <div class="flashcard-front">
                             <h4>Haus</h4> <!-- German Word -->
                         </div>
@@ -66,8 +70,8 @@
             </div>
             <!-- Flashcard 2 -->
             <div class="col-md-4">
-                <div class="flashcard" onclick="this.classList.toggle('flip')">
-                    <div class="flashcard-inner">
+                <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
+                    <div class="flashcard">
                         <div class="flashcard-front">
                             <h4>Buch</h4> <!-- German Word -->
                         </div>
@@ -79,8 +83,8 @@
             </div>
             <!-- Flashcard 3 -->
             <div class="col-md-4">
-                <div class="flashcard" onclick="this.classList.toggle('flip')">
-                    <div class="flashcard-inner">
+                <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
+                    <div class="flashcard">
                         <div class="flashcard-front">
                             <h4>Hund</h4> <!-- German Word -->
                         </div>
