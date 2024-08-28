@@ -69,6 +69,7 @@
             height: 100%;
             backface-visibility: hidden;
             display: flex;
+            flex-direction: column; /* Align text and button vertically */
             justify-content: center;
             align-items: center;
             padding: 1rem;
@@ -88,6 +89,22 @@
             color: white;
             font-family: 'IRANSans', sans-serif; /* Apply IranSans font */
             transform: rotateY(180deg);
+        }
+
+        .example {
+            font-size: 1.2rem; /* Smaller font size for example sentence */
+            margin-top: 10px;
+        }
+
+        .play-button {
+            font-size: 1rem; /* Smaller font size for button */
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
         }
 
         .pagination-controls {
@@ -162,7 +179,11 @@
 
                 const front = document.createElement('div');
                 front.className = 'flashcard-front';
-                front.innerHTML = `<h4>${word.german}</h4>`;
+                front.innerHTML = `
+                    <h4>${word.german}</h4>
+                    <button class="play-button" onclick="playAudio('${word.audio}')">Play</button>
+                    <p class="example">${word.example}</p>
+                `;
 
                 const back = document.createElement('div');
                 back.className = 'flashcard-back';
@@ -174,6 +195,11 @@
                 page.appendChild(flashcardContainer);
                 container.appendChild(page);
             });
+        }
+
+        function playAudio(url) {
+            const audio = new Audio(url);
+            audio.play();
         }
 
         function showPage(page) {
@@ -193,7 +219,6 @@
                 showPage(currentPage);
             }
         }
-
         function prevPage() {
             if (currentPage > 1) {
                 currentPage--;
@@ -201,5 +226,6 @@
             }
         }
     </script>
+
 </body>
 </html>
