@@ -43,3 +43,90 @@ a:hover{
 #mdcontent{
 	opacity: 0;
 }
+
+
+.speech-bubble {
+	position: relative;
+	background-color: #ffffff; /* White background */
+	padding: 20px;
+	margin: 20px 0;
+	width: 100%; /* Make the bubbles take full width */
+	border: 2px solid #333333; /* Black border */
+	color: #333333; /* Black text color */
+	cursor: pointer; /* Pointer cursor to indicate clickable element */
+	opacity: 0; /* Start with transparent */
+	transition: opacity 0.5s ease; /* Smooth transition for fade effect */
+  }
+
+  .speech-bubble.fade-in {
+	opacity: 1; /* Fully opaque when fade-in class is added */
+  }
+
+  .speech-bubble::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	width: 0;
+	height: 0;
+  }
+
+  .speech-bubble-left {
+	margin-left: 0;
+	margin-right: auto;
+	border: 2px solid #ff6600; /* Orange border for left bubbles */
+  }
+
+  .speech-bubble-left::after {
+	border: 20px solid transparent;
+	border-right-color: #ff6600; /* Orange color for arrow to match border */
+	border-left: 0;
+	border-bottom: 0;
+	left: -20px; /* Keep the arrow aligned with the left edge */
+	top: 20px; /* Adjust for centering */
+  }
+
+  .speech-bubble-right {
+	background-color: #e0e0e0; /* Light grey background for right bubbles */
+	border: 2px solid #ff6600; /* Orange border for right bubbles */
+	margin-right: 0;
+	margin-left: auto;
+	text-align: right;
+  }
+
+  .speech-bubble-right::after {
+	border: 20px solid transparent;
+	border-left-color: #e0e0e0; /* Light grey background for arrow */
+	border-right: 0;
+	border-top: 0;
+	right: -20px; /* Keep the arrow aligned with the right edge */
+	top: 20px; /* Adjust for centering */
+  }
+
+  .icon {
+	font-size: 24px;
+	margin-right: 10px;
+	vertical-align: middle;
+	color: #ff6600; /* Orange icon color */
+  }
+
+  .bubble-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+
+  .bubble-container.reverse {
+	flex-direction: row-reverse;
+  }
+
+  .translation {
+	font-size: 0.9rem;
+	color: #333333; /* Black text color */
+	margin-top: 10px;
+	font-style: italic;
+  }
+
+  .translation-rtl {
+	direction: rtl; /* Ensure text flows from right to left */
+	text-align: left; /* Align the Persian text to the left */
+  }

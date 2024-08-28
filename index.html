@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="اینجا جزوه‌هام رو می‌نویسم">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.3/css/all.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -60,82 +61,39 @@
       <li><a href="korean-unit-5.html">درس ۵</a></li>
     </ul>
 
- <!-- Conversation Section -->
- <h2 class="heading">مکالمه ساده در آلمانی</h2>
- <div class="row">
-   <!-- First Line of Conversation -->
-   <div class="col-md-6">
-     <div class="card mb-3">
-       <div class="card-body">
-         <p class="card-text" style="text-align: left;">Hallo!</p>
-       </div>
-     </div>
-   </div>
-   <div class="col-md-6">
-     <div class="card mb-3">
-       <div class="card-body" style="text-align: right; direction: rtl;">
-         <p class="card-text">!سلام</p>
-       </div>
-     </div>
-   </div>
-   
-   <!-- Second Line of Conversation -->
-   <div class="col-md-6">
-     <div class="card mb-3">
-       <div class="card-body">
-         <p class="card-text" style="text-align: left;">Wie geht's?</p>
-       </div>
-     </div>
-   </div>
-   <div class="col-md-6">
-     <div class="card mb-3">
-       <div class="card-body" style="text-align: right; direction: rtl;">
-         <p class="card-text">چطوری؟</p>
-       </div>
-     </div>
-   </div>
-
-   <!-- Third Line of Conversation -->
-   <div class="col-md-6">
-     <div class="card mb-3">
-       <div class="card-body">
-         <p class="card-text" style="text-align: left;">Gut, danke! Und dir?</p>
-       </div>
-     </div>
-   </div>
-   <div class="col-md-6">
-     <div class="card mb-3">
-       <div class="card-body" style="text-align: right; direction: rtl;">
-         <p class="card-text">خوبم، ممنون! تو چطور؟</p>
-       </div>
-     </div>
-   </div>
-
-   <!-- Fourth Line of Conversation -->
-   <div class="col-md-6">
-     <div class="card mb-3">
-       <div class="card-body">
-         <p class="card-text" style="text-align: left;">Mir geht's auch gut, danke!</p>
-       </div>
-     </div>
-   </div>
-   <div class="col-md-6">
-     <div class="card mb-3">
-       <div class="card-body" style="text-align: right; direction: rtl;">
-         <p class="card-text">منم خوبم، ممنون!</p>
-       </div>
-     </div>
-   </div>
- </div>
- <!-- End of Conversation Section -->
+    
 
   </div>  
 </div>
+
+<div class="container" style="padding-top:50px;">
+  <div class="row">
+    <!-- First Conversation -->
+    <conversation>
+      Speaker1: Hallo!| سلام!
+      Speaker2: Wie geht's? | چطوری؟
+      Speaker1: Gut, danke! Und dir?| خوبم، ممنون! تو چطور؟
+      Speaker2: Mir geht's auch gut, danke!| منم خوبم، ممنون!
+    </conversation>
+    
+    <!-- Second Conversation -->
+    <conversation>
+      Speaker1: Guten Morgen!|صبح بخیر!
+      Speaker2: Guten Morgen! Wie geht es Ihnen?|صبح بخیر! حال شما چطور است؟
+      Speaker1: Sehr gut, danke!|خیلی خوب، ممنون!
+      Speaker2: Das freut mich!|خوشحالم!
+    </conversation>
+  </div>  
+</div>
+
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar-bottom">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">&copy; All Rights Reserved</a>
   </div>
 </nav>
+
+
+<script src="conversation.js"></script>
 </body>
 </html>
