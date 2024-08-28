@@ -81,11 +81,10 @@
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             font-size: 2rem; /* Increase font size */
-            transition: all 0.3s ease; /* Smooth transition for hover effects */
         }
 
         .flashcard-front {
-            background-color: transparent; /* Transparent background for the front */
+            background-color: #f8f9fa; /* Light background for the front */
             font-family: 'Roboto', sans-serif; /* Apply Roboto font */
         }
 
@@ -94,10 +93,6 @@
             color: white;
             font-family: 'IRANSans', sans-serif; /* Apply IranSans font */
             transform: rotateY(180deg);
-        }
-
-        .flashcard-front:hover, .flashcard-back:hover {
-            transform: scale(1.05); /* Slightly enlarge on hover */
         }
 
         .example {
@@ -118,11 +113,6 @@
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
-        .play-button:hover {
-            background-color: #0056b3; /* Darker blue on hover */
-            transform: scale(1.1); /* Slightly enlarge on hover */
-        }
-
         .pagination-controls {
             position: fixed;
             bottom: 20px;
@@ -141,11 +131,6 @@
             font-size: 16px;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .pagination-controls button:hover {
-            background-color: #0056b3; /* Darker blue on hover */
-            transform: scale(1.1); /* Slightly enlarge on hover */
         }
 
         .pagination-controls #nextBtn {
@@ -229,8 +214,7 @@
             pages.forEach((p, index) => {
                 p.style.transform = `translateX(${(index - (page - 1)) * 100}%)`;
             });
-
-            // Update button states
+                        // Update button states
             document.getElementById('prevBtn').disabled = page === 1;
             document.getElementById('nextBtn').disabled = page === totalPages;
         }
