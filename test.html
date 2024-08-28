@@ -169,47 +169,46 @@
                 showPage(currentPage);
             });
 
-        function createFlashcards() {
-            const container = document.getElementById('flashcard-container');
-            flashcards.forEach((word, index) => {
-                const page = document.createElement('div');
-                page.className = 'flashcard-page';
-                page.id = `page${index + 1}`;
-                page.style.transform = `translateX(${index * 100}%)`;
-        
-                const flashcardContainer = document.createElement('div');
-                flashcardContainer.className = 'flashcard-container';
-                flashcardContainer.onclick = () => flashcardContainer.firstChild.classList.toggle('is-flipped');
-        
-                const flashcard = document.createElement('div');
-                flashcard.className = 'flashcard';
-        
-                const front = document.createElement('div');
-                front.className = 'flashcard-front';
-                front.innerHTML = `
-                    <h4>${word.german}</h4>
-                    <button class="play-button" onclick="playAudio(this)">Play</button>
-                    <p class="example">${word.example}</p>
-                `;
-        
-                const back = document.createElement('div');
-                back.className = 'flashcard-back';
-                back.innerHTML = `<h4>${word.persian}</h4>`;
-        
-                flashcard.appendChild(front);
-                flashcard.appendChild(back);
-                flashcardContainer.appendChild(flashcard);
-                page.appendChild(flashcardContainer);
-                container.appendChild(page);
-            });
-        }
-        
-        function playAudio(event, button) {
-            event.stopPropagation(); // Prevents the flashcard flip
-            const audio = new Audio(button.getAttribute('data-audio'));
-            audio.play();
-        }
-        
+            function createFlashcards() {
+                const container = document.getElementById('flashcard-container');
+                flashcards.forEach((word, index) => {
+                    const page = document.createElement('div');
+                    page.className = 'flashcard-page';
+                    page.id = `page${index + 1}`;
+                    page.style.transform = `translateX(${index * 100}%)`;
+            
+                    const flashcardContainer = document.createElement('div');
+                    flashcardContainer.className = 'flashcard-container';
+                    flashcardContainer.onclick = () => flashcardContainer.firstChild.classList.toggle('is-flipped');
+            
+                    const flashcard = document.createElement('div');
+                    flashcard.className = 'flashcard';
+            
+                    const front = document.createElement('div');
+                    front.className = 'flashcard-front';
+                    front.innerHTML = `
+                        <h4>${word.german}</h4>
+                        <button class="play-button" data-audio="${word.audio}" onclick="playAudio(event, this)">Play</button>
+                        <p class="example">${word.example}</p>
+                    `;
+            
+                    const back = document.createElement('div');
+                    back.className = 'flashcard-back';
+                    back.innerHTML = `<h4>${word.persian}</h4>`;
+            
+                    flashcard.appendChild(front);
+                    flashcard.appendChild(back);
+                    flashcardContainer.appendChild(flashcard);
+                    page.appendChild(flashcardContainer);
+                    container.appendChild(page);
+                });
+            }
+            
+            function playAudio(event, button) {
+                event.stopPropagation(); // Prevents the flashcard flip
+                const audio = new Audio(button.getAttribute('data-audio'));
+                audio.play();
+            }
         function showPage(page) {
             const pages = document.querySelectorAll('.flashcard-page');
             pages.forEach((p, index) => {
