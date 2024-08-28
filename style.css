@@ -43,8 +43,6 @@ a:hover{
 #mdcontent{
 	opacity: 0;
 }
-
-
 .speech-bubble {
 	position: relative;
 	background-color: #ffffff; /* White background */
@@ -58,7 +56,7 @@ a:hover{
 	transition: opacity 0.5s ease; /* Smooth transition for fade effect */
   }
 
-  .speech-bubble.fade-in {
+  .fade-in {
 	opacity: 1; /* Fully opaque when fade-in class is added */
   }
 
@@ -129,4 +127,15 @@ a:hover{
   .translation-rtl {
 	direction: rtl; /* Ensure text flows from right to left */
 	text-align: left; /* Align the Persian text to the left */
+  }
+
+  /* Mobile Specific Styles */
+  @media only screen and (max-width: 600px) {
+	.speech-bubble {
+	  font-size: 1rem; /* Adjust font size for better visibility */
+	  padding: 15px; /* Adjust padding */
+	}
+	.icon {
+	  font-size: 20px; /* Slightly smaller icons on mobile */
+	}
   }

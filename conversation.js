@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function() {
           const bubble = document.createElement('div');
           bubble.className = `speech-bubble ${isFirstSpeaker ? 'speech-bubble-left' : 'speech-bubble-right'}`;
           bubble.style.direction = 'ltr';
-          bubble.classList.add('fade-in'); // Add the fade-in class
 
           const icon = document.createElement('i');
           icon.className = `fas fa-user${isFirstSpeaker ? '' : '-circle'} icon`;
@@ -42,6 +41,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
           bubbleContainer.appendChild(bubble);
           container.appendChild(bubbleContainer);
+
+          // Trigger fade-in after the element is added to the DOM
+          setTimeout(() => {
+            bubble.classList.add('fade-in');
+          }, 100);
 
           // Add click event to the bubble to show the next line
           bubble.addEventListener('click', function() {
