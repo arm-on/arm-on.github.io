@@ -6,6 +6,8 @@
     <title>German-Persian Flashcards</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- IranSans Font -->
+    <link href="https://cdn.rawgit.com/rastikerdar/iransans/5.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
     <style>
         .flashcard-container {
             perspective: 1000px;
@@ -48,53 +50,76 @@
         .flashcard-back {
             background-color: #007bff; /* Blue background for the back */
             color: white;
-            transform: rotateY(180deg);
+            font-family: 'IRANSans', sans-serif; /* Apply IranSans font */
         }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%; /* Reduce width for smaller controls */
+        }
+
+        .carousel-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
     </style>
 </head>
 <body>
     <div class="container mt-5">
-        <div class="row g-4">
-            <!-- Flashcard 1 -->
-            <div class="col-md-4">
-                <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
-                    <div class="flashcard">
-                        <div class="flashcard-front">
-                            <h4>Haus</h4> <!-- German Word -->
-                        </div>
-                        <div class="flashcard-back">
-                            <h4>خانه</h4> <!-- Persian Translation -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Flashcard 2 -->
-            <div class="col-md-4">
-                <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
-                    <div class="flashcard">
-                        <div class="flashcard-front">
-                            <h4>Buch</h4> <!-- German Word -->
-                        </div>
-                        <div class="flashcard-back">
-                            <h4>کتاب</h4> <!-- Persian Translation -->
+        <div id="flashcardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="carousel-inner">
+                <!-- Flashcard 1 -->
+                <div class="carousel-item active">
+                    <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
+                        <div class="flashcard">
+                            <div class="flashcard-front">
+                                <h4>Haus</h4> <!-- German Word -->
+                            </div>
+                            <div class="flashcard-back">
+                                <h4>خانه</h4> <!-- Persian Translation -->
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Flashcard 3 -->
-            <div class="col-md-4">
-                <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
-                    <div class="flashcard">
-                        <div class="flashcard-front">
-                            <h4>Hund</h4> <!-- German Word -->
-                        </div>
-                        <div class="flashcard-back">
-                            <h4>سگ</h4> <!-- Persian Translation -->
+                <!-- Flashcard 2 -->
+                <div class="carousel-item">
+                    <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
+                        <div class="flashcard">
+                            <div class="flashcard-front">
+                                <h4>Buch</h4> <!-- German Word -->
+                            </div>
+                            <div class="flashcard-back">
+                                <h4>کتاب</h4> <!-- Persian Translation -->
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- Flashcard 3 -->
+                <div class="carousel-item">
+                    <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
+                        <div class="flashcard">
+                            <div class="flashcard-front">
+                                <h4>Hund</h4> <!-- German Word -->
+                            </div>
+                            <div class="flashcard-back">
+                                <h4>سگ</h4> <!-- Persian Translation -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more flashcards as needed -->
             </div>
-            <!-- Add more flashcards as needed -->
+            <!-- Carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#flashcardCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#flashcardCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
 
