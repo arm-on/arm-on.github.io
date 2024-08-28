@@ -3,18 +3,18 @@
         "german": "Haus",
         "persian": "خانه",
         "example": "Das ist mein Haus.",
-        "pronunciation": "https://example.com/haus.mp3"
+        "audio": "https://example.com/haus.mp3"
     },
     {
         "german": "Buch",
         "persian": "کتاب",
         "example": "Ich lese ein Buch.",
-        "pronunciation": "https://example.com/buch.mp3"
+        "audio": "https://example.com/buch.mp3"
     },
     {
         "german": "Hund",
         "persian": "سگ",
         "example": "Der Hund bellt.",
-        "pronunciation": "https://example.com/hund.mp3"
+        "audio": "https://example.com/hund.mp3"
     }
 ]
