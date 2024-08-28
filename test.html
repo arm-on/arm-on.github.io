@@ -59,8 +59,7 @@
             transform: rotateY(180deg);
         }
 
-        .flashcard-front,
-        .flashcard-back {
+        .flashcard-front, .flashcard-back {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -74,6 +73,7 @@
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             font-size: 2rem; /* Increase font size */
+            text-align: center; /* Center text horizontally */
         }
 
         .flashcard-front {
@@ -172,41 +172,41 @@
                 showPage(currentPage);
             });
 
-        function createFlashcards() {
-            const container = document.getElementById('flashcard-container');
-            flashcards.forEach((word, index) => {
-                const page = document.createElement('div');
-                page.className = 'flashcard-page';
-                page.id = `page${index + 1}`;
-                page.style.transform = `translateX(${index * 100}%)`;
-
-                const flashcardContainer = document.createElement('div');
-                flashcardContainer.className = 'flashcard-container';
-                flashcardContainer.onclick = () => flashcardContainer.firstChild.classList.toggle('is-flipped');
-
-                const flashcard = document.createElement('div');
-                flashcard.className = 'flashcard';
-
-                const front = document.createElement('div');
-                front.className = 'flashcard-front';
-                front.innerHTML = `
-                    <div class="card-number">${index + 1}/${flashcards.length}</div>
-                    <h4>${word.german}</h4>
-                    <button class="play-button" data-audio="${word.audio}" onclick="playAudio(event, this)">Play</button>
-                    <p class="example">${word.example}</p>
-                `;
-
-                const back = document.createElement('div');
-                back.className = 'flashcard-back';
-                back.innerHTML = `<h4>${word.persian}</h4>`;
-
-                flashcard.appendChild(front);
-                flashcard.appendChild(back);
-                flashcardContainer.appendChild(flashcard);
-                page.appendChild(flashcardContainer);
-                container.appendChild(page);
-            });
-        }
+            function createFlashcards() {
+                const container = document.getElementById('flashcard-container');
+                flashcards.forEach((word, index) => {
+                    const page = document.createElement('div');
+                    page.className = 'flashcard-page';
+                    page.id = `page${index + 1}`;
+                    page.style.transform = `translateX(${index * 100}%)`;
+            
+                    const flashcardContainer = document.createElement('div');
+                    flashcardContainer.className = 'flashcard-container';
+                    flashcardContainer.onclick = () => flashcardContainer.firstChild.classList.toggle('is-flipped');
+            
+                    const flashcard = document.createElement('div');
+                    flashcard.className = 'flashcard';
+            
+                    const front = document.createElement('div');
+                    front.className = 'flashcard-front';
+                    front.innerHTML = `
+                        <div class="card-number">${index + 1}/${flashcards.length}</div>
+                        <h4>${word.german}</h4>
+                        <button class="play-button" data-audio="${word.audio}" onclick="playAudio(event, this)">Play</button>
+                        <p class="example">${word.example}</p>
+                    `;
+            
+                    const back = document.createElement('div');
+                    back.className = 'flashcard-back';
+                    back.innerHTML = `<h4 style="text-align: center; direction: rtl;">${word.persian}</h4>`; // Center and set RTL direction
+            
+                    flashcard.appendChild(front);
+                    flashcard.appendChild(back);
+                    flashcardContainer.appendChild(flashcard);
+                    page.appendChild(flashcardContainer);
+                    container.appendChild(page);
+                });
+            }
 
         function playAudio(event, button) {
             event.stopPropagation(); // Prevents the flashcard flip
