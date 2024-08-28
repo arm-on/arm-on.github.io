@@ -36,7 +36,6 @@
             position: fixed; /* Fixed positioning to overlay pages correctly */
             top: 0;
             left: 0;
-            transition: transform 0.6s ease; /* Smooth transition between pages */
             backface-visibility: hidden;
         }
 
@@ -46,7 +45,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            perspective: 1000px; /* Perspective for 3D flip effect */
         }
 
         .flashcard {
@@ -54,12 +52,11 @@
             height: 100%;
             max-width: 600px; /* Optional max width */
             max-height: 600px; /* Optional max height */
-            transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1); /* Smooth flip animation */
             transform-style: preserve-3d;
             position: relative;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Card shadow */
             border-radius: 15px;
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Gradient background */
+            background-color: #f8f9fa; /* Light background for the front */
         }
 
         .flashcard.is-flipped {
@@ -84,7 +81,6 @@
         }
 
         .flashcard-front {
-            background-color: #f8f9fa; /* Light background for the front */
             font-family: 'Roboto', sans-serif; /* Apply Roboto font */
         }
 
@@ -110,7 +106,6 @@
             border-radius: 50px; /* Rounded button */
             margin-top: 10px;
             cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .pagination-controls {
@@ -130,7 +125,6 @@
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .pagination-controls #nextBtn {
@@ -214,7 +208,8 @@
             pages.forEach((p, index) => {
                 p.style.transform = `translateX(${(index - (page - 1)) * 100}%)`;
             });
-                        // Update button states
+
+            // Update button states
             document.getElementById('prevBtn').disabled = page === 1;
             document.getElementById('nextBtn').disabled = page === totalPages;
         }
