@@ -20,25 +20,26 @@
             overflow: hidden; /* Prevent scrolling */
         }
 
+        .flashcard-page {
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed; /* Fixed positioning to overlay pages correctly */
+            top: 0;
+            left: 0;
+            transition: transform 0.6s ease; /* Smooth transition between pages */
+            backface-visibility: hidden;
+        }
+
         .flashcard-container {
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow-x: scroll; /* Enable horizontal scrolling */
-            overflow-y: hidden; /* Prevent vertical scrolling */
-            scroll-snap-type: x mandatory; /* Snap scrolling to cards */
-        }
-        
-        .flashcard-page {
-            width: 100vw; /* Full viewport width */
-            height: 100vh; /* Full viewport height */
-            flex-shrink: 0; /* Prevent shrinking */
-            scroll-snap-align: start; /* Snap start for scrolling */
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            perspective: 1000px; /* Perspective for 3D flip effect */
         }
 
         .flashcard {
@@ -213,11 +214,11 @@
             audio.play();
         }
         function showPage(page) {
-            const container = document.querySelector('.flashcard-container');
-            const cardWidth = container.clientWidth;
-            container.scrollLeft = cardWidth * (page - 1); // Scroll to the selected card
-        
-            // Update button states
+            const pages = document.querySelectorAll('.flashcard-page');
+            pages.forEach((p, index) => {
+                p.style.transform = `translateX(${(index - (page - 1)) * 100}%)`;
+            });
+                        // Update button states
             document.getElementById('prevBtn').disabled = page === 1;
             document.getElementById('nextBtn').disabled = page === totalPages;
         }
