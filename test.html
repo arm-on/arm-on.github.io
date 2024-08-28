@@ -11,26 +11,39 @@
     <!-- Roboto Font for English -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif; /* Default font to Roboto */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden; /* Prevent scrolling */
         }
 
-        .carousel-container {
-            max-width: 400px; /* Ensures flashcards don't exceed a reasonable size */
-            margin: auto;
+        .flashcard-page {
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute; /* Positioning for pagination */
+            top: 0;
+            left: 0;
+            transition: transform 0.5s ease;
+            backface-visibility: hidden;
         }
 
         .flashcard-container {
-            perspective: 1000px;
-            cursor: pointer;
             width: 100%;
-            height: 300px; /* Increased height for better display */
-            margin: auto;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .flashcard {
-            width: 100%;
-            height: 100%;
+            width: 100%; /* Full width of the container */
+            height: 100%; /* Full height of the container */
+            max-width: 600px; /* Optional max width */
+            max-height: 600px; /* Optional max height */
             transition: transform 0.6s;
             transform-style: preserve-3d;
             position: relative;
@@ -52,7 +65,6 @@
             padding: 1rem;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
         }
 
         .flashcard-front {
@@ -67,85 +79,109 @@
             transform: rotateY(180deg);
         }
 
-        .carousel-control-prev,
-        .carousel-control-next {
-            width: 5%; /* Reduce width for smaller controls */
-        }
-
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: #007bff; /* Set background color to match flashcards */
-            padding: 10px; /* Add padding for a larger click area */
-            border-radius: 50%; /* Make the controls circular */
-        }
-
-        .carousel-item {
+        .pagination-controls {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Makes sure each flashcard takes up the full viewport height */
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .pagination-controls button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .pagination-controls #nextBtn {
+            margin-right: 20px; /* Add margin to the right of the "Next" button */
+        }
+
+        .pagination-controls button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
         }
     </style>
 </head>
 <body>
-    <div class="container mt-5 carousel-container">
-        <div id="flashcardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-            <div class="carousel-inner">
-                <!-- Flashcard 1 -->
-                <div class="carousel-item active">
-                    <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
-                        <div class="flashcard">
-                            <div class="flashcard-front">
-                                <h4>Haus</h4> <!-- German Word -->
-                            </div>
-                            <div class="flashcard-back">
-                                <h4>خانه</h4> <!-- Persian Translation -->
-                            </div>
-                        </div>
-                    </div>
+    <!-- Flashcards -->
+    <div class="flashcard-page" id="page1" style="transform: translateX(0);">
+        <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
+            <div class="flashcard">
+                <div class="flashcard-front">
+                    <h4>Haus</h4> <!-- German Word -->
                 </div>
-                <!-- Flashcard 2 -->
-                <div class="carousel-item">
-                    <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
-                        <div class="flashcard">
-                            <div class="flashcard-front">
-                                <h4>Buch</h4> <!-- German Word -->
-                            </div>
-                            <div class="flashcard-back">
-                                <h4>کتاب</h4> <!-- Persian Translation -->
-                            </div>
-                        </div>
-                    </div>
+                <div class="flashcard-back">
+                    <h4>خانه</h4> <!-- Persian Translation -->
                 </div>
-                <!-- Flashcard 3 -->
-                <div class="carousel-item">
-                    <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
-                        <div class="flashcard">
-                            <div class="flashcard-front">
-                                <h4>Hund</h4> <!-- German Word -->
-                            </div>
-                            <div class="flashcard-back">
-                                <h4>سگ</h4> <!-- Persian Translation -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more flashcards as needed -->
             </div>
-            <!-- Fancy Carousel controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#flashcardCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#flashcardCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        </div>
+    </div>
+    <div class="flashcard-page" id="page2" style="transform: translateX(100%);">
+        <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
+            <div class="flashcard">
+                <div class="flashcard-front">
+                    <h4>Buch</h4> <!-- German Word -->
+                </div>
+                <div class="flashcard-back">
+                    <h4>کتاب</h4> <!-- Persian Translation -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flashcard-page" id="page3" style="transform: translateX(100%);">
+        <div class="flashcard-container" onclick="this.children[0].classList.toggle('is-flipped')">
+            <div class="flashcard">
+                <div class="flashcard-front">
+                    <h4>Hund</h4> <!-- German Word -->
+                </div>
+                <div class="flashcard-back">
+                    <h4>سگ</h4> <!-- Persian Translation -->
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Bootstrap 5 JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+    <!-- Pagination Controls -->
+    <div class="pagination-controls">
+        <button id="prevBtn" onclick="prevPage()" disabled>Previous</button>
+        <button id="nextBtn" onclick="nextPage()">Next</button>
+    </div>
+
+    <!-- JavaScript for Pagination -->
+    <script>
+        let currentPage = 1;
+        const totalPages = 3;
+
+        function showPage(page) {
+            const pages = document.querySelectorAll('.flashcard-page');
+            pages.forEach((p, index) => {
+                p.style.transform = `translateX(${(index - (page - 1)) * 100}%)`;
+            });
+
+            // Update button states
+            document.getElementById('prevBtn').disabled = page === 1;
+            document.getElementById('nextBtn').disabled = page === totalPages;
+        }
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        }
+    </script>
 </body>
 </html>
