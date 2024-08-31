@@ -178,5 +178,257 @@
         "persian": "زمان موردعلاقه شما",
         "example": "",
         "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130497P025409-ihrelieblingszeit.mp3"
-   }
+   },
+   {
+    "german": "Malen Sie",
+    "persian": "رنگ کنید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131557P1069388-malensie.mp3"
+},
+{
+    "german": "die Frau",
+    "persian": "خانم",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131559P739708-frau.mp3"
+},
+{
+    "german": "der Herr",
+    "persian": "آقا",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131562P0919948-herr.mp3"
+},
+{
+    "german": "Suchen Sie",
+    "persian": "جستجو کنید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131565P068141-suchensie.mp3"
+},
+{
+    "german": "Grüßen Sie",
+    "persian": "سلام کنید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131567P784383-grüßensie.mp3"
+},
+{
+    "german": "Wer sagt was?",
+    "persian": "چه کسی چی میگه؟",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131569P382412-wersagtwas.mp3"
+},
+{
+    "german": "Ordnen Sie",
+    "persian": "مرتب کنید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131570P907388-ordnensie.mp3"
+},
+{
+    "german": "Ordnen Sie zu",
+    "persian": "اختصاص دهید و assign کنید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131572P36063-ordnensiezu.mp3"
+},
+{
+    "german": "Zu dritt",
+    "persian": "سه نفره",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131574P57736-zudritt.mp3"
+},
+{
+    "german": "Ja, das kann ich",
+    "persian": "آره، من اینو میتونم",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131575P936406-jadaskannich.mp3"
+},
+{
+    "german": "Entschuldigung",
+    "persian": "ببخشید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131577P821785-entschuldigung.mp3"
+},
+{
+    "german": "Ich buchstabiere",
+    "persian": "من هجی میکنم",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131580P4185479-ichbuchstabiere.mp3"
+},
+{
+    "german": "Wie bitte?",
+    "persian": "چی لطفا؟",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131581P849958-wiebitte.mp3"
+},
+{
+    "german": "perfekt",
+    "persian": "عالی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131583P4217489-perfekt.mp3"
+},
+{
+    "german": "Zeigen Sie auf die Fotos",
+    "persian": "به عکس ها اشاره کنید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131585P590082-zeigensieaufdiefotos.mp3"
+},
+{
+    "german": "Und du?",
+    "persian": "و تو؟",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131587P2930958-unddu.mp3"
+},
+{
+    "german": "Stellen Sie sich alphabetisch auf",
+    "persian": "به ترتیب حروف الفبا ردیف کنید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131588P708365-stellensiesichalphabetischauf.mp3"
+},
+{
+    "german": "das Taxi",
+    "persian": "تاکسی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131590P7397-taxi.mp3"
+},
+{
+    "german": "der Kaffee",
+    "persian": "قهوه",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131593P284927-kaffee.mp3"
+},
+{
+    "german": "die Pizza",
+    "persian": "پیتزا",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131596P2264562-pizza.mp3"
+},
+{
+    "german": "die Wörter",
+    "persian": "کلمات",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131599P0779352-diewörter.mp3"
+},
+{
+    "german": "markieren Sie",
+    "persian": "علامت‌گذاری کنید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131600P900052-markierensie.mp3"
+},
+{
+    "german": "die Tomate",
+    "persian": "گوجه فرنگی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131603P1206121-dietomate.mp3"
+},
+{
+    "german": "die Jeans",
+    "persian": "شلوار جین",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131604P662736-diejeans.mp3"
+},
+{
+    "german": "das Auto",
+    "persian": "ماشین",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131606P358461-dasauto.mp3"
+},
+{
+    "german": "die Bluse",
+    "persian": "بلوز",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131607P939577-diebluse.mp3"
+},
+{
+    "german": "das Müsli",
+    "persian": "غلات صبحانه",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131609P8785422-dasmüsli.mp3"
+},
+{
+    "german": "der Tee",
+    "persian": "چای",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131611P4504719-dertee.mp3"
+},
+{
+    "german": "das Bier",
+    "persian": "آبجو",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131612P85503-dasbier.mp3"
+},
+{
+    "german": "die Jacke",
+    "persian": "ژاکت",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131614P217105-diejacke.mp3"
+},
+{
+    "german": "der Bus",
+    "persian": "اتوبوس",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131615P748388-derbus.mp3"
+},
+{
+    "german": "der Computer",
+    "persian": "کامپیوتر",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131617P182262-dercomputer.mp3"
+},
+{
+    "german": "Sammeln Sie",
+    "persian": "جمع‌آوری کنید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131618P8551302-sammelnsie.mp3"
+},
+{
+    "german": "Lernen Sie neue Vokabeln in Gruppen",
+    "persian": "کلمات جدید را در گروه‌ها بیاموزید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131620P2873511-lernensieneuevokabelningruppen.mp3"
+},
+{
+    "german": "Wer ist das?",
+    "persian": "اون چه کسیه؟",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131622P171266-weristdas.mp3"
+},
+{
+    "german": "die Schweiz",
+    "persian": "سوئیس",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131623P571821-dieschweiz.mp3"
+},
+{
+    "german": "das Italien",
+    "persian": "ایتالیا",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131625P046724-italien.mp3"
+},
+{
+    "german": "das Spanien",
+    "persian": "اسپانیا",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131628P014399-spanien.mp3"
+},
+{
+    "german": "der Polen",
+    "persian": "لهستان",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131630P5327628-polen.mp3"
+},
+{
+    "german": "das Griechenland",
+    "persian": "یونان",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131633P329896-griechenland.mp3"
+},
+{
+    "german": "das Deutschland",
+    "persian": "آلمان",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131636P265078-deutschland.mp3"
+},
+{
+    "german": "das Österreich",
+    "persian": "اتریش",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131638P720736-österreich.mp3"
+}
 ]
