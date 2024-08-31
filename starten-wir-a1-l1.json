@@ -1,0 +1,182 @@
+[
+    {
+        "german": "Mein Name ist Arman",
+        "persian": "اسم من آرمانه",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130434P5501819-meinnameistarman.mp3"
+   },
+   {
+        "german": "Ich heiße Arman",
+        "persian": "من آرمان نامیده می‌شوم.",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130436P634252-ichheißearman.mp3"
+   },
+   {
+        "german": "Wie heißt du?",
+        "persian": "اسم تو چیه؟",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130438P917859-wieheißtdu.mp3"
+   },
+   {
+        "german": "Wie heißen Sie?",
+        "persian": "اسم شما چیست؟",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130440P411232-wieheißensie.mp3"
+   },
+   {
+        "german": "noch einmal",
+        "persian": "یه بار دیگه",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130441P9336782-nocheinmal.mp3"
+   },
+   {
+        "german": "der Vorname",
+        "persian": "اسم کوچک",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130446P7558122-vorname.mp3"
+   },
+   {
+        "german": "der Nachname",
+        "persian": "اسم فامیلی",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130449P586043-nachname.mp3"
+   },
+   {
+        "german": "Hallo",
+        "persian": "سلام",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130452P8496199-hallo.mp3"
+   },
+   {
+        "german": "Guten Tag",
+        "persian": "روز بخیر",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130455P5042791-gutentag.mp3"
+   },
+   {
+        "german": "Guten Abend",
+        "persian": "عصر بخیر",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130456P993713-gutenabend.mp3"
+   },
+   {
+        "german": "Guten Morgen",
+        "persian": "صبح بخیر",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130458P548948-gutenmorgen.mp3"
+   },
+   {
+        "german": "Gute Nacht",
+        "persian": "شب بخیر",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130460P03938-gutenacht.mp3"
+   },
+   {
+        "german": "Wiederholen Sie",
+        "persian": "تکرار کنید",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130461P6733801-wiederholensie.mp3"
+   },
+   {
+        "german": "variieren Sie",
+        "persian": "تغییر دهید",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130463P3930812-variierensie.mp3"
+   },
+   {
+        "german": "Spielen Sie",
+        "persian": "بازی کنید",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130464P910114-spielensie.mp3"
+   },
+   {
+        "german": "Unterstreichen Sie",
+        "persian": "زیرشون رو خط بکشید",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130466P568096-unterstreichensie.mp3"
+   },
+   {
+        "german": "Hören Sie",
+        "persian": "گوش کنید",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130468P294365-hörensie.mp3"
+   },
+   {
+        "german": "Ergänzen Sie",
+        "persian": "کامل کنید",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130470P093837-ergänzensie.mp3"
+   },
+   {
+        "german": "Schreiben Sie",
+        "persian": "بنویسید",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130472P3662322-schreibensie.mp3"
+   },
+   {
+        "german": "Lesen Sie",
+        "persian": "بخوانید (منظور متن رو)",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130474P126957-lesensie.mp3"
+   },
+   {
+        "german": "der Name",
+        "persian": "اسم",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130475P857146-name.mp3"
+   },
+   {
+        "german": "Fragen und antworten Sie",
+        "persian": "بپرسید و جواب بدهید",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130478P475591-fragenundantwortensie.mp3"
+   },
+   {
+        "german": "der Kopf",
+        "persian": "سر",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130480P851339-kopf.mp3"
+   },
+   {
+        "german": "die Zahl",
+        "persian": "شماره",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130483P731978-zahl.mp3"
+   },
+   {
+        "german": "Zu zweit",
+        "persian": "دو نفره",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130487P033922-zuzweit.mp3"
+   },
+   {
+        "german": "Wo ist das?",
+        "persian": "اون کجاست؟",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130489P5161338-woistdas.mp3"
+   },
+   {
+        "german": "Alle im Kurs",
+        "persian": "همه در کلاس",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130491P644254-alleimkurs.mp3"
+   },
+   {
+        "german": "Wer spricht?",
+        "persian": "چه کسی صحبت میکنه؟",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130493P560838-werspricht.mp3"
+   },
+   {
+        "german": "Gehen Sie",
+        "persian": "بروید",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130495P2815628-gehensie.mp3"
+   },
+   {
+        "german": "Ihre Lieblingszeit",
+        "persian": "زمان موردعلاقه شما",
+        "example": "",
+        "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725130497P025409-ihrelieblingszeit.mp3"
+   }
+]

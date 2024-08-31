@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German-Persian Flashcards</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Roboto Font for English -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- IranSans Font via @font-face -->
+    <style>
+        @import url(fontiran.css);
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        .flashcard-page {
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed; /* Fixed positioning to overlay pages correctly */
+            top: 0;
+            left: 0;
+            transition: transform 0.6s ease; /* Smooth transition between pages */
+            backface-visibility: hidden;
+        }
+
+        .flashcard-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px; /* Perspective for 3D flip effect */
+        }
+
+        .flashcard {
+            width: 100%;
+            height: 100%;
+            max-width: 600px; /* Optional max width */
+            max-height: 600px; /* Optional max height */
+            transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1); /* Smooth flip animation */
+            transform-style: preserve-3d;
+            position: relative;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Card shadow */
+            border-radius: 15px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Gradient background */
+        }
+
+        .flashcard.is-flipped {
+            transform: rotateY(180deg);
+        }
+
+        .flashcard-front, .flashcard-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column; /* Align text and button vertically */
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            margin: 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 2rem; /* Increase font size */
+            text-align: center; /* Center text horizontally */
+        }
+
+        .flashcard-front {
+            background-color: #f8f9fa; /* Light background for the front */
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+        }
+
+        .flashcard-back {
+            background-color: #007bff; /* Blue background for the back */
+            color: white;
+            font-family: 'IRANSansX', sans-serif; /* Apply IranSans font */
+            transform: rotateY(180deg);
+        }
+
+        .example {
+            font-size: 1.2rem; /* Smaller font size for example sentence */
+            margin-top: 10px;
+            color: #555; /* Lighter color for example sentence */
+        }
+
+        .play-button {
+            font-size: 1rem; /* Smaller font size for button */
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 50px; /* Rounded button */
+            margin-top: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .pagination-controls {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .pagination-controls button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .pagination-controls #nextBtn {
+            margin-right: 20px; /* Add margin to the right of the "Next" button */
+        }
+
+        .pagination-controls button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        .card-number {
+            font-size: 1rem; /* Smaller font size for the card number */
+            color: #555; /* A lighter color for visibility */
+            position: absolute;
+            top: 10px;
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Adjust position to be centered */
+            text-align: center; /* Center text */
+        }
+    </style>
+</head>
+<body>
+    <!-- Flashcards will be dynamically generated here -->
+    <div id="flashcard-container"></div>
+
+    <!-- Pagination Controls -->
+    <div class="pagination-controls">
+        <button id="prevBtn" onclick="prevPage()" disabled>Previous</button>
+        <button id="nextBtn" onclick="nextPage()">Next</button>
+    </div>
+
+    <!-- JavaScript for Loading Data and Pagination -->
+    <script>
+        let currentPage = 1;
+        let totalPages = 0;
+        let flashcards = [];
+
+        // Fetch data from JSON file and initialize flashcards
+        fetch('starten-wir-a1-l1.json')
+            .then(response => response.json())
+            .then(data => {
+                flashcards = data;
+                totalPages = flashcards.length;
+                createFlashcards();
+                showPage(currentPage);
+            });
+
+            function createFlashcards() {
+                const container = document.getElementById('flashcard-container');
+                flashcards.forEach((word, index) => {
+                    const page = document.createElement('div');
+                    page.className = 'flashcard-page';
+                    page.id = `page${index + 1}`;
+                    page.style.transform = `translateX(${index * 100}%)`;
+            
+                    const flashcardContainer = document.createElement('div');
+                    flashcardContainer.className = 'flashcard-container';
+                    flashcardContainer.onclick = () => flashcardContainer.firstChild.classList.toggle('is-flipped');
+            
+                    const flashcard = document.createElement('div');
+                    flashcard.className = 'flashcard';
+            
+                    const front = document.createElement('div');
+                    front.className = 'flashcard-front';
+                    front.innerHTML = `
+                        <div class="card-number">${index + 1}/${flashcards.length}</div>
+                        <h4>${word.german}</h4>
+                        <button class="play-button" data-audio="${word.audio}" onclick="playAudio(event, this)">Play</button>
+                        <p class="example">${word.example}</p>
+                    `;
+            
+                    const back = document.createElement('div');
+                    back.className = 'flashcard-back';
+                    back.innerHTML = `<h4 style="text-align: center; direction: rtl;">${word.persian}</h4>`; // Center and set RTL direction
+            
+                    flashcard.appendChild(front);
+                    flashcard.appendChild(back);
+                    flashcardContainer.appendChild(flashcard);
+                    page.appendChild(flashcardContainer);
+                    container.appendChild(page);
+                });
+            }
+
+        function playAudio(event, button) {
+            event.stopPropagation(); // Prevents the flashcard flip
+            const audio = new Audio(button.getAttribute('data-audio'));
+            audio.play();
+        }
+        function showPage(page) {
+            const pages = document.querySelectorAll('.flashcard-page');
+            pages.forEach((p, index) => {
+                p.style.transform = `translateX(${(index - (page - 1)) * 100}%)`;
+            });
+                        // Update button states
+            document.getElementById('prevBtn').disabled = page === 1;
+            document.getElementById('nextBtn').disabled = page === totalPages;
+        }
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        }
+    </script>
+</body>
+</html>
