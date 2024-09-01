@@ -808,5 +808,239 @@
     "persian": "تیک بزنید",
     "example": "",
     "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212767P8619971-kreuzensiean.mp3"
+},
+{
+    "german": "über",
+    "persian": "درباره‌ی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215481P3786-über.mp3"
+},
+{
+    "german": "lnteressen",
+    "persian": "علایق",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215484P178894-lnteressen.mp3"
+},
+{
+    "german": "die Musik",
+    "persian": "موسیقی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215486P955903-musik.mp3"
+},
+{
+    "german": "die Sprachen",
+    "persian": "زبان‌ها",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215494P898421-diesprachen.mp3"
+},
+{
+    "german": "die Psychologie",
+    "persian": "روانشناسی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215496P268594-psychologie.mp3"
+},
+{
+    "german": "Ich liebe dich",
+    "persian": "من تو رو دوست دارم",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215499P633344-ichliebedich.mp3"
+},
+{
+    "german": "Ich mache gerne Sport bei Topfit",
+    "persian": "من با علاقه در Topfit ورزش میکنم",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215501P077031-ichmachegernesportbeitopfit.mp3"
+},
+{
+    "german": "der Kurse",
+    "persian": "دوره ها",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215502P9706829-kurse.mp3"
+},
+{
+    "german": "die Kursliste",
+    "persian": "لیست دوره",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215505P344919-kursliste.mp3"
+},
+{
+    "german": "der Wohnort",
+    "persian": "محل سکونت",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215508P013868-wohnort.mp3"
+},
+{
+    "german": "das Telefon",
+    "persian": "تلفن",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215510P6689541-telefon.mp3"
+},
+{
+    "german": "die Telefonnummer",
+    "persian": "شماره تلفن",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215513P197251-telefonnummer.mp3"
+},
+{
+    "german": "Null",
+    "persian": "0",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215515P7212858-null.mp3"
+},
+{
+    "german": "Eins",
+    "persian": "1",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215518P470691-eins.mp3"
+},
+{
+    "german": "Zwei",
+    "persian": "2",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215520P8164558-zwei.mp3"
+},
+{
+    "german": "Drei",
+    "persian": "3",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215523P2786-drei.mp3"
+},
+{
+    "german": "Vier",
+    "persian": "4",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215525P909625-vier.mp3"
+},
+{
+    "german": "Fünf",
+    "persian": "5",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215528P220829-fünf.mp3"
+},
+{
+    "german": "Sechs",
+    "persian": "6",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215531P207335-sechs.mp3"
+},
+{
+    "german": "Sieben",
+    "persian": "7",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215533P806171-sieben.mp3"
+},
+{
+    "german": "Acht",
+    "persian": "8",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215537P592494-acht.mp3"
+},
+{
+    "german": "Neun",
+    "persian": "9",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215540P224718-neun.mp3"
+},
+{
+    "german": "Zehn",
+    "persian": "10",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215542P83812-zehn.mp3"
+},
+{
+    "german": "dir Karten",
+    "persian": "کارت‌ها",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215545P364349-dirkarten.mp3"
+},
+{
+    "german": "das Warschau",
+    "persian": "شهر ورشو",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215547P2809322-warschau.mp3"
+},
+{
+    "german": "das Wien",
+    "persian": "شهر وین",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215549P710277-wien.mp3"
+},
+{
+    "german": "das Zürich",
+    "persian": "زوریخ",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215553P011488-zürich.mp3"
+},
+{
+    "german": "der Kindergarten",
+    "persian": "مهدکودک",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215555P3706381-kindergarten.mp3"
+},
+{
+    "german": "der Rom",
+    "persian": "شهر رم",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215558P416987-rom.mp3"
+},
+{
+    "german": "Jetzt",
+    "persian": "الان، حالا",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215561P067074-jetzt.mp3"
+},
+{
+    "german": "IT Engineering",
+    "persian": "مهندسی آی‌تی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215564P12175-itengineering.mp3"
+},
+{
+    "german": "meine Freunde",
+    "persian": "دوست من",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215565P644958-meinefreunde.mp3"
+},
+{
+    "german": "Ich spreche Englisch und ein bisschen Deutsch",
+    "persian": "من انگلیسی و کمی آلمانی صحبت میکنم",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215567P201078-ichsprecheenglischundeinbisschendeutsch.mp3"
+},
+{
+    "german": "die Lieblingsstadt",
+    "persian": "شهر مورد علاقه",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215568P9828281-lieblingsstadt.mp3"
+},
+{
+    "german": "das London",
+    "persian": "شهر لندن",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215571P9365811-london.mp3"
+},
+{
+    "german": "Shopping",
+    "persian": "خرید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215574P321855-shopping.mp3"
+},
+{
+    "german": "Er studiert Medizin",
+    "persian": "او در حال تحصیل در رشته پزشکی است",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215576P977267-erstudiertmedizin.mp3"
+},
+{
+    "german": "mit",
+    "persian": "با، همراه",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215578P6492229-mit.mp3"
+},
+{
+    "german": "das Profil",
+    "persian": "نمایه",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725215580P506964-profil.mp3"
 }
 ]
