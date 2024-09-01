@@ -592,5 +592,221 @@
     "persian": "اعداد",
     "example": "",
     "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209129P3172128-diezahlen.mp3"
+},
+{
+    "german": "der Star",
+    "persian": "ستاره",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212700P097163-star.mp3"
+},
+{
+    "german": "das Smartphone",
+    "persian": "گوشی هوشمند",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212703P052738-smartphone.mp3"
+},
+{
+    "german": "der Taxifahrer",
+    "persian": "راننده تاکسی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212705P445313-taxifahrer.mp3"
+},
+{
+    "german": "das Französisch",
+    "persian": "فرانسوی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212707P731885-französisch.mp3"
+},
+{
+    "german": "Willkommen bei der Taxi-app",
+    "persian": "به اپلیکیشن تاکسی خوش آمدید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212710P014226-willkommenbeidertaxiapp.mp3"
+},
+{
+    "german": "der Berliner",
+    "persian": "برلینی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212711P779739-berliner.mp3"
+},
+{
+    "german": "ltalienisch",
+    "persian": "ایتالیایی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212714P2714-ltalienisch.mp3"
+},
+{
+    "german": "das Polnisch",
+    "persian": "لهستانی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212716P984405-polnisch.mp3"
+},
+{
+    "german": "das Griechisch",
+    "persian": "یونانی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212719P344825-griechisch.mp3"
+},
+{
+    "german": "das Russisch",
+    "persian": "روسی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212721P88157-russisch.mp3"
+},
+{
+    "german": "Sprichst du Spanisch?",
+    "persian": "اسپانیایی صحبت میکنی؟",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212724P288666-sprichstduspanisch.mp3"
+},
+{
+    "german": "Sprechen Sie Persisch?",
+    "persian": "شما فارسی صحبت میکنید؟",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212726P007485-sprechensiepersisch.mp3"
+},
+{
+    "german": "der Dialog",
+    "persian": "گفتگو",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212728P358054-dialog.mp3"
+},
+{
+    "german": "ein bisschen",
+    "persian": "کمی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212730P80196-einbisschen.mp3"
+},
+{
+    "german": "sehr gut",
+    "persian": "خیلی خوب",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212732P116833-sehrgut.mp3"
+},
+{
+    "german": "ja",
+    "persian": "بله",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212733P774558-ja.mp3"
+},
+{
+    "german": "nein",
+    "persian": "نه",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212735P3929741-nein.mp3"
+},
+{
+    "german": "berichten Sie",
+    "persian": "گزارش کنید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212737P043796-berichtensie.mp3"
+},
+{
+    "german": "Testen Sie lhre Augen",
+    "persian": "چشمان خود را تست کنید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212738P410926-testensielhreaugen.mp3"
+},
+{
+    "german": "das Bild",
+    "persian": "تصویر",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212740P174478-bild.mp3"
+},
+{
+    "german": "Die Zahlen werden immer kleiner",
+    "persian": "اعداد کوچکتر و کوچکتر می شوند",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212742P331885-diezahlenwerdenimmerkleiner.mp3"
+},
+{
+    "german": "Er hält sein Blatt hoch",
+    "persian": "کاغذش را بالا می گیرد",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212744P491688-erhältseinblatthoch.mp3"
+},
+{
+    "german": "Er liest",
+    "persian": "او می خواند",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212746P18301-erliest.mp3"
+},
+{
+    "german": "Ist Emma da?",
+    "persian": "اما اونجاست؟",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212748P06746-istemmada.mp3"
+},
+{
+    "german": "möchtest du die Handynummer?",
+    "persian": "آیا شماره تلفن همراه را می خواهید؟",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212749P447267-möchtestdudiehandynummer.mp3"
+},
+{
+    "german": "die Dialoge",
+    "persian": "دیالوگ‌ها",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212750P936626-diedialoge.mp3"
+},
+{
+    "german": "die E-Mail-Adresse",
+    "persian": "آدرس ایمیل",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212752P431133-dieemailadresse.mp3"
+},
+{
+    "german": "ätt",
+    "persian": "علامت @",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212754P0940108-ätt.mp3"
+},
+{
+    "german": "der punkt",
+    "persian": "نقطه",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212756P753126-punkt.mp3"
+},
+{
+    "german": "Tschüss",
+    "persian": "خدافظ (دوستانه)",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212758P438346-tschüss.mp3"
+},
+{
+    "german": "lch studiere",
+    "persian": "دارم درس میخونم",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212760P5455139-lchstudiere.mp3"
+},
+{
+    "german": "lch jogge",
+    "persian": "من دویدن دارم",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212761P888591-lchjogge.mp3"
+},
+{
+    "german": "lch mache Yoga",
+    "persian": "من یوگا می کنم",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212763P2184489-lchmacheyoga.mp3"
+},
+{
+    "german": "lch mache gerne Sport",
+    "persian": "من ورزش را دوست دارم",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212764P717073-lchmachegernesport.mp3"
+},
+{
+    "german": "richtig",
+    "persian": "درست است",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212766P236257-richtig.mp3"
+},
+{
+    "german": "Kreuzen Sie an",
+    "persian": "تیک بزنید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725212767P8619971-kreuzensiean.mp3"
 }
 ]
