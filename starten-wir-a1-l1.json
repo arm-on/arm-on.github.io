@@ -430,5 +430,167 @@
     "persian": "اتریش",
     "example": "",
     "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725131638P720736-österreich.mp3"
+},
+{
+    "german": "Ich komme aus dem Iran",
+    "persian": "من اهل ایرانم",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209086P8885498-ichkommeausdemiran.mp3"
+},
+{
+    "german": "Ich wohne in Berlin",
+    "persian": "من در برلین زندگی میکنم",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209089P120807-ichwohneinberlin.mp3"
+},
+{
+    "german": "die Städte",
+    "persian": "شهرها",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209090P547294-diestädte.mp3"
+},
+{
+    "german": "die Länder",
+    "persian": "کشورها",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209092P0443-dieländer.mp3"
+},
+{
+    "german": "Nehmen Sie",
+    "persian": "بگیر",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209093P4536052-nehmensie.mp3"
+},
+{
+    "german": "hier",
+    "persian": "اینجا",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209094P800298-hier.mp3"
+},
+{
+    "german": "Woher kommst du?",
+    "persian": "تو اهل کجایی؟",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209096P512596-woherkommstdu.mp3"
+},
+{
+    "german": "sortieren Sie",
+    "persian": "مرتب کنید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209097P88959-sortierensie.mp3"
+},
+{
+    "german": "Wo wohnen Sie?",
+    "persian": "شما کجا زندگی می‌کنید؟",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209099P377677-wowohnensie.mp3"
+},
+{
+    "german": "rechts",
+    "persian": "راست",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209100P7592351-rechts.mp3"
+},
+{
+    "german": "links",
+    "persian": "چپ",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209102P428588-links.mp3"
+},
+{
+    "german": "Karte steht ein Land und eine Stadt In Deutschland",
+    "persian": "نقشه یک کشور و یک شهر در آلمان را نشان می دهد",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209104P259889-kartestehteinlandundeinestadtindeutschland.mp3"
+},
+{
+    "german": "Legen Sie die Karten auf einen Tisch",
+    "persian": "کارت ها را روی یک میز قرار دهید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209106P286176-legensiediekartenaufeinentisch.mp3"
+},
+{
+    "german": "Mischen Sie",
+    "persian": "مخلوط کنید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209108P042895-mischensie.mp3"
+},
+{
+    "german": "gehen Sie umher",
+    "persian": "قدم بزن",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209109P3416152-gehensieumher.mp3"
+},
+{
+    "german": "die Internetseite",
+    "persian": "وب سایت",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209110P826761-dieinternetseite.mp3"
+},
+{
+    "german": "Ihre Partnerin",
+    "persian": "شریک زندگی شما",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209112P157614-ihrepartnerin.mp3"
+},
+{
+    "german": "Raten Sie",
+    "persian": "حدس بزنید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209113P5469172-ratensie.mp3"
+},
+{
+    "german": "prüfen Sie",
+    "persian": "چک کنید",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209114P796458-prüfensie.mp3"
+},
+{
+    "german": "die Grammatik",
+    "persian": "گرامر",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209116P108683-diegrammatik.mp3"
+},
+{
+    "german": "Wer ist das?",
+    "persian": "اون کیه؟",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209117P483113-weristdas.mp3"
+},
+{
+    "german": "die Seite",
+    "persian": "صفحه",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209119P210148-seite.mp3"
+},
+{
+    "german": "Modedesigner aus Paris",
+    "persian": "طراح مد از پاریس",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209121P527414-modedesignerausparis.mp3"
+},
+{
+    "german": "Trainer aus Deutschland",
+    "persian": "مربی از آلمان",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209123P106715-trainerausdeutschland.mp3"
+},
+{
+    "german": "das Englisch",
+    "persian": "انگلیسی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209124P872104-englisch.mp3"
+},
+{
+    "german": "das Spanisch",
+    "persian": "اسپانیایی",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209127P1228402-spanisch.mp3"
+},
+{
+    "german": "die Zahlen",
+    "persian": "اعداد",
+    "example": "",
+    "audio": "https://github.com/arm-on/arm-on.github.io/raw/master/assets/audio/1725209129P3172128-diezahlen.mp3"
 }
 ]
