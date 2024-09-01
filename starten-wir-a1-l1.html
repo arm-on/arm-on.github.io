@@ -236,6 +236,24 @@
                 showPage(currentPage);
             }
         }
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowLeft') {
+                // Trigger click event on left button when the left arrow key is pressed
+                document.getElementById('leftButton').click();
+            } else if (event.key === 'ArrowRight') {
+                // Trigger click event on right button when the right arrow key is pressed
+                document.getElementById('rightButton').click();
+            }
+        });
+
+        // Optional: Add click event listeners to buttons to show which button was clicked
+        document.getElementById('leftButton').addEventListener('click', function() {
+            alert('Left button clicked!');
+        });
+
+        document.getElementById('rightButton').addEventListener('click', function() {
+            alert('Right button clicked!');
+        });
     </script>
 </body>
 </html>
